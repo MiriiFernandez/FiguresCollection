@@ -1,3 +1,15 @@
 /* ********* */
 /* @NAVIGATOR */
 /* ********* */
+.categorias{
+    display: flex;
+    justify-content: center;
+    background-color: map-get($colores, fondo_categorias );
+}
+.categorias img{
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    margin: 10px;
+}
+
+

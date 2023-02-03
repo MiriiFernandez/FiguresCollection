@@ -1,3 +1,13 @@
 /* ********* */
 /* @HEADER */
 /* ********* */
+
+header{
+    background-color: map-get($colores, theme);
+    width: 100%;
+    height: 80px;
+}
+
+.logo_header img{
+    width: 80px;
+}

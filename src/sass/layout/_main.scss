@@ -1,0 +1,20 @@
+/* ********* */
+/* @MAIN */
+/* ********* */
+.descubrir{
+    background-color: map-get($colores , banner_novedades );
+    width: 100%;
+    height: 230px;
+    background-image: url('/public/assets/img/smartphone/thor.webp');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.proximamente{
+    background-color: map-get($colores, banner_proximamente );
+    width: 100%;
+    height: 230px;
+    background-image: url('/public/assets/img/smartphone/blackAdam.webp');
+    background-repeat: no-repeat;
+    background-position: right;
+}

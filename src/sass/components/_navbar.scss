@@ -1,0 +1,13 @@
+/* ********* */
+/* @NAVBAR */
+/* ********* */
+
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: map-get($colores, theme);
+    padding: 10px;
+   
+}
+

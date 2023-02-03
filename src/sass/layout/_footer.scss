@@ -1,4 +1,36 @@
 /* ********* */
 /* @FOOTER */
 /* ********* */
+footer{
+    display: flex;
+    height: 94px;
+}
 
+ul,li{
+    list-style: none;
+   
+    padding-left: 10px;
+}
+
+.copy{
+    font-size: 9px;
+    margin-top: 20px;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 9px;
+    margin-left: 10px;
+    color: black;
+}
+
+.contacto{
+    flex-direction: row;
+    font-size: 10px;
+    padding: 30px;
+}
+
+.contacto a{
+    font-size: 14px;
+}
