@@ -1,0 +1,26 @@
+/* ********* */
+/* @LOGIN */
+/* ********* */
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo_login{
+   margin-top: 5rem;
+}
+
+.iniciaSesion{
+    font-size: 18px;
+}
+
+input{
+    border-radius: 19px;
+    height: 35px;
+    width: 250px;
+    margin-top: 10px;
+    margin: 14px;
+}
