@@ -326,6 +326,22 @@ template {
 /* ********* */
 /* @TYPOGRAPHY */
 /* ********* */
+@font-face {
+  font-family: "font_negra";
+  src: url(/public/assets/font/LEMONMILK-Bold.woff2);
+}
+@font-face {
+  font-family: "font_regular";
+  src: url(/public/assets/font/LEMONMILK-Regular.woff2);
+}
+@font-face {
+  font-family: "font_medio";
+  src: url(/public/assets/font/LEMONMILK-Medium.woff2);
+}
+@font-face {
+  font-family: "font_ligero";
+  src: url(/public/assets/font/LEMONMILK-Light.woff2);
+}
 /* ********* */
 /* @BUTTONS */
 /* ********* */
@@ -498,21 +514,63 @@ a {
           flex-direction: column;
   text-align: center;
 }
-
-.logo_login {
+.container .logo_login {
   margin-top: 5rem;
 }
-
-.iniciaSesion {
-  font-size: 18px;
-}
-
-input {
+.container .login_form input {
   border-radius: 19px;
   height: 35px;
   width: 250px;
   margin-top: 10px;
   margin: 14px;
+}
+.container .login_form input::-webkit-input-placeholder {
+  padding: 10px;
+}
+.container .login_form input::-moz-placeholder {
+  padding: 10px;
+}
+.container .login_form input:-ms-input-placeholder {
+  padding: 10px;
+}
+.container .login_form input::-ms-input-placeholder {
+  padding: 10px;
+}
+.container .login_form input::placeholder {
+  padding: 10px;
+}
+.container .login_form .login_btn {
+  border-radius: 24px;
+  background-color: #2393D9;
+  padding: 5px 15px 8px 8px;
+}
+.container .login_form .login_btn a {
+  color: black;
+  font-family: "font_regular";
+  font-size: 12px;
+}
+.container h4 {
+  font-family: "font_negra";
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+.container .frase_coleccionista {
+  color: white;
+  font-size: 20px;
+}
+.container .link_registro {
+  font-size: 18px;
+}
+.container .navbar_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 25px;
 }
 
 /* ********* */
