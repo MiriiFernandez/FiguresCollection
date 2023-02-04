@@ -29,7 +29,11 @@
         .login_btn{
             border-radius: map-get($btn_login,radio );
             background-color: #2393D9;
-            padding: 5px 15px 8px 8px;
+            padding: 5px 15px 5px 5px;
+            margin-bottom: 30px;
+            margin-top: 8px;
+
+            
         }
     
         .login_btn a{
@@ -45,20 +49,24 @@
         letter-spacing: 4px;
     }
     
-    .frase_coleccionista{
+    p{
         color: white;
-        font-size: 20px;
+        font-size: 14px;
+        font-family: "font_regular";
+        margin-top: 15px;
     }
 
-    .link_registro{
+    .link_toregistro{
         font-size: 18px;
+        font-family: "font_regular";
+        
     }
 
-    .navbar_footer{
-        display: flex;
-       justify-content: center;
-       justify-content: space-around;
-       padding: 25px;
+    .navbar{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 50px;
+        margin-top: 30px;
         
     }
 }
