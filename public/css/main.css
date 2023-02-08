@@ -350,7 +350,7 @@ template {
 /* ********* */
 .banner {
   background-color: #515151;
-  width: 100%;
+  width: 105%;
   height: 230px;
   background-image: url("/public/assets/img/smartphone/obiwan.webp");
   background-repeat: no-repeat;
@@ -381,11 +381,74 @@ template {
   padding: 10px;
 }
 
+.navbar_registro {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50px 1fr 50px 1fr 50px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 20px;
+  grid-template-rows: 20px;
+  grid-gap: 50px;
+  margin-top: 30px;
+}
+
+.navbar_registro > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.navbar_registro > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.navbar_registro > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.navbar_registro > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.navbar_login {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 50px 1fr 50px 1fr 50px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 20px;
+  grid-template-rows: 20px;
+  grid-gap: 50px;
+  margin-top: 30px;
+}
+
+.navbar_login > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.navbar_login > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.navbar_login > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.navbar_login > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
 /* ********* */
 /* @BODY */
 /* ********* */
 body {
   background-color: #F26B1D;
+  height: 1000px;
 }
 
 /* ********* */
@@ -411,6 +474,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 105%;
   background-color: #CEC9C9;
 }
 
@@ -469,14 +533,11 @@ a {
 /* @GRID*/
 /* ********* */
 /* ********* */
-/* @SIDEBAR */
-/* ********* */
-/* ********* */
-/* @MAIN */
+/* @HOME */
 /* ********* */
 .descubrir {
   background-color: #D92929;
-  width: 100%;
+  width: 105%;
   height: 230px;
   background-image: url("/public/assets/img/smartphone/thor.webp");
   background-repeat: no-repeat;
@@ -485,16 +546,13 @@ a {
 
 .proximamente {
   background-color: #2393D9;
-  width: 100%;
+  width: 105%;
   height: 230px;
   background-image: url("/public/assets/img/smartphone/blackAdam.webp");
   background-repeat: no-repeat;
   background-position: right;
 }
 
-/* ********* */
-/* @HOME */
-/* ********* */
 /* ********* */
 /* @CONTACT */
 /* ********* */
@@ -526,22 +584,27 @@ a {
 }
 .container .login_form input::-webkit-input-placeholder {
   padding: 10px;
+  font-size: 12px;
 }
 .container .login_form input::-moz-placeholder {
   padding: 10px;
+  font-size: 12px;
 }
 .container .login_form input:-ms-input-placeholder {
   padding: 10px;
+  font-size: 12px;
 }
 .container .login_form input::-ms-input-placeholder {
   padding: 10px;
+  font-size: 12px;
 }
 .container .login_form input::placeholder {
   padding: 10px;
+  font-size: 12px;
 }
 .container .login_form .login_btn {
   border-radius: 24px;
-  background-color: #2393D9;
+  background-color: #2393d9;
   padding: 5px 15px 5px 5px;
   margin-bottom: 30px;
   margin-top: 8px;
@@ -565,14 +628,6 @@ a {
 .container .link_toregistro {
   font-size: 18px;
   font-family: "font_regular";
-}
-.container .navbar {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 50px 1fr 50px 1fr 50px 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 50px;
-  margin-top: 30px;
 }
 
 /* ********* */
@@ -633,32 +688,6 @@ a {
 .container .link_tologin {
   font-size: 18px;
   font-family: "font_regular";
-}
-.container .navbar_registro {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 50px 1fr 50px 1fr 50px 1fr;
-  grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 20px;
-  grid-template-rows: 20px;
-  grid-gap: 50px;
-  margin-top: 30px;
-}
-.container .navbar_registro > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-.container .navbar_registro > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-.container .navbar_registro > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-.container .navbar_registro > *:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
 }
 
 /* ********* */

@@ -2,72 +2,60 @@
 /* @LOGIN */
 /* ********* */
 
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
 
-    .logo_login{
-       margin-top: 5rem;
-    }
-    
-    .login_form{
-    
-        input{
-            border-radius: 19px;
-            height: 35px;
-            width: 250px;
-            margin-top: 10px;
-            margin: 14px;
-        }
+  .logo_login {
+    margin-top: 5rem;
+  }
 
-        input::placeholder{
-            padding: 10px;
-        }
-    
-        .login_btn{
-            border-radius: map-get($btn_login,radio );
-            background-color: #2393D9;
-            padding: 5px 15px 5px 5px;
-            margin-bottom: 30px;
-            margin-top: 8px;
-
-            
-        }
-    
-        .login_btn a{
-            color: black;
-            font-family: "font_regular";
-            font-size: 12px;
-        }
-    }
-    
-    h4{
-        font-family: "font_negra";
-        font-size: 25px;
-        letter-spacing: 4px;
-    }
-    
-    p{
-        color: white;
-        font-size: 14px;
-        font-family: "font_regular";
-        margin-top: 15px;
+  .login_form {
+    input {
+      border-radius: 19px;
+      height: 35px;
+      width: 250px;
+      margin-top: 10px;
+      margin: 14px;
     }
 
-    .link_toregistro{
-        font-size: 18px;
-        font-family: "font_regular";
-        
+    input::placeholder {
+      padding: 10px;
+      font-size: 12px;
     }
 
-    .navbar{
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-gap: 50px;
-        margin-top: 30px;
-        
+    .login_btn {
+      border-radius: map-get($btn_login, radio);
+      background-color: #2393d9;
+      padding: 5px 15px 5px 5px;
+      margin-bottom: 30px;
+      margin-top: 8px;
     }
+
+    .login_btn a {
+      color: black;
+      font-family: "font_regular";
+      font-size: 12px;
+    }
+  }
+
+  h4 {
+    font-family: "font_negra";
+    font-size: 25px;
+    letter-spacing: 4px;
+  }
+
+  p {
+    color: white;
+    font-size: 14px;
+    font-family: "font_regular";
+    margin-top: 15px;
+  }
+
+  .link_toregistro {
+    font-size: 18px;
+    font-family: "font_regular";
+  }
 }
-
