@@ -1,9 +1,13 @@
 /* ********* */
 /* @HOME */
 /* ********* */
+a{
+    font-family: "font_ligero";
+}
+
 .descubrir{
     background-color: map-get($colores , banner_novedades );
-    width: 105%;
+    width: 410px;
     height: 230px;
     background-image: url('/public/assets/img/smartphone/thor.webp');
     background-repeat: no-repeat;
@@ -12,7 +16,7 @@
 
 .proximamente{
     background-color: map-get($colores, banner_proximamente );
-    width: 105%;
+    width: 410px;
     height: 230px;
     background-image: url('/public/assets/img/smartphone/blackAdam.webp');
     background-repeat: no-repeat;

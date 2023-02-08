@@ -4,5 +4,5 @@
 
 body{
     background-color: map-get($colores, theme);
-    height: 1000px;
+    max-width: 380px;
 }

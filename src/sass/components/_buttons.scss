@@ -1,3 +1,12 @@
 /* ********* */
 /* @BUTTONS */
 /* ********* */
+
+.btn{
+    background-color: map-get($colores, botones);
+    color: map-get($botones, letras);
+    border-radius: map-get($botones, radio);
+    width: map-get($botones, anchura);
+    height: map-get($botones, longitud);
+    margin: 50px 40px 40px 40px;
+}
