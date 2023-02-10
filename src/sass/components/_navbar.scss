@@ -4,9 +4,10 @@
 
 .navbar{
     display: flex;
-    width: 390px;
-    justify-content: space-evenly;
+    width: 100%;
     padding: 10px;
+    justify-content: space-evenly;
+    background-color: map-get($colores, theme);
 }
 
 .navbar_registro{

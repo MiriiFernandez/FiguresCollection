@@ -1,8 +1,7 @@
 /* ********* */
 /* @BODY */
 /* ********* */
-
-body{
-    background-color: map-get($colores, theme);
-    max-width: 380px;
+body {
+  background-color: map-get($colores, theme);
+  height: 100vh;
 }

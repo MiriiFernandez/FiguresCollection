@@ -11,12 +11,11 @@
   background-position: right;
 }
 
-// SECCION NOVEDADES
-.Banner_secciones {
+// BANNER NOVEDADES
+.Banner_novedades {
   display: flex;
-  align-items: center;
-  background: #8d8d8d;
-  width: 410px;
-  height: 65px;
-  margin-top: 10px;
+  align-items: map-get($banner_categorias, posicion);
+  background: map-get($colores_titulos_categorias, fondo_novedades);
+  height: map-get($banner_categorias, altura);
+  margin-top: map-get($banner_categorias, margen_top);
 }

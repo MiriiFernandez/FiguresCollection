@@ -10,18 +10,19 @@
   <body>
     <!-- HEADER -->
     <header>
-      <picture class="logo_header">
-        <img src="assets/img/smartphone/logofc.png" alt="" />
-      </picture>
+      <input class="input_header"type="text">
     </header>
+    <!-- MAIN -->
+    <main class="fondo_categorias">
     <!-- BANNER CON TITULO -->
-    <section class="Banner_secciones">
+    <section class="Banner_novedades">
       <h4 class="titulo_novedades">NOVEDADES</h4>
     </section>
     <!-- CARDS DE FIGURAS -->
     <section class="card_figuras">
       <!-- Primera Card  -->
       <figure class="card">
+        <a href="visualizar_stanlee.html">
         <picture class="figuras_novedades">
           <source
             srcset="
@@ -31,6 +32,7 @@
           />
           <img class="" src="" alt="stanLee" />
         </picture>
+      </a>
         <figcaption class="titulo_figura">
           Iron Studio - STAN LEE DELUXE
         </figcaption>
@@ -65,7 +67,13 @@
           </picture>
         </section>
       </figure>
-
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="index.html"><img src="./assets/img/svg/icon_home.svg" alt="" /></a>  
+      <img src="./assets/img/svg/icon_discover.svg" alt="" />
+      <img src="./assets/img/svg/icon_list.svg" alt="" />
+      <a href="login.html"><img src="./assets/img/svg/icon_user.svg" alt="" /></a>
+    </nav>
       <!-- Segunda Card  -->
       <figure class="card">
         <picture class="figuras_novedades">
@@ -112,7 +120,7 @@
 
       <!-- Tercera Card  -->
       <figure class="card">
-        <picture class="figuras_novedades">
+        <picture>
           <source
             srcset="
               /public/assets/img/smartphone/obiwan.webp    1x,
@@ -156,5 +164,26 @@
         </section>
       </figure>
     </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <!-- Terminos y Copy -->
+      <section class="terminos">
+      <ul>
+        <b>
+        <li><a href="">Política y Privacidad</a></li>
+        <li><a href="">Terminos y Condiciones</a></li>
+        <li class="copy">Copyright © 2023 derechos reservados a CF</li>
+      </ul>
+    </b>
+  </section>
+      <!-- contacto -->
+      <section class="contacto">
+        <b> <a href=""
+          >Contáctanos!</b>
+          <img src="/public/assets/img/svg/icon_mssg.svg" alt="" />
+        </a>
+      </section>
+    </footer>
   </body>
 </html>

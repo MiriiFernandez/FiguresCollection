@@ -11,6 +11,12 @@ $colores: (
     banner_proximamente: #2393D9
 );
 
+$colores_titulos_categorias: (
+    fondo_novedades:#2393D9,
+    fondo_descubrir: #F28705,
+    fondo_proximamente: #D92929
+);
+
 $botones: (
     letras: white,
     radio: 24px,
@@ -39,3 +45,8 @@ $btn_login: (
    radio: 24px
 );
 
+$banner_categorias: (
+    posicion: center,
+    altura: 65px,
+    margen_top: 10px
+);

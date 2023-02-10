@@ -367,15 +367,14 @@ template {
   background-position: right;
 }
 
-.Banner_secciones {
+.Banner_novedades {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #8d8d8d;
-  width: 410px;
+  background: #2393D9;
   height: 65px;
   margin-top: 10px;
 }
@@ -387,11 +386,12 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 390px;
+  width: 100%;
+  padding: 10px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 10px;
+  background-color: #F26B1D;
 }
 
 .navbar_registro {
@@ -461,19 +461,32 @@ template {
 /* ********* */
 body {
   background-color: #F26B1D;
-  max-width: 380px;
+  height: 100vh;
 }
 
 /* ********* */
 /* @HEADER */
 /* ********* */
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("/public/assets/img/smartphone/logofc.png");
   background-color: #F26B1D;
   width: 100%;
+  background-size: 90px;
+  background-repeat: no-repeat;
   height: 80px;
 }
-
-.logo_header img {
+header .input_header {
+  background: url("/public/assets/img/smartphone/lupa.png");
+  background-size: 35px;
+  background-position: 165px center;
+  background-repeat: no-repeat;
+  margin-left: 140px;
+  border: 0;
+}
+header .logo_header img {
   width: 80px;
 }
 
@@ -634,7 +647,7 @@ a {
   font-family: "font_regular";
   font-size: 12px;
 }
-.container h4 {
+.container .iniciaSesion h4 {
   font-family: "font_negra";
   font-size: 25px;
   letter-spacing: 4px;
@@ -713,6 +726,10 @@ a {
 /* ********* */
 /* @NOVEDADES */
 /* ********* */
+.fondo_categorias {
+  background: #b0b0b0;
+}
+
 .titulo_novedades {
   font-family: "font_medio";
   font-size: 18px;
@@ -760,12 +777,15 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   padding-top: 8px;
-  width: 300px;
-  height: 410px;
-  background: rgba(206, 201, 201, 0.21);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.33);
+  width: 320px;
+  height: 450px;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33);
   border-radius: 8px;
 }
 
@@ -777,20 +797,119 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-top: 25px;
   width: 90%;
   height: 50px;
-  background: #ffffff;
-  background: rgba(219, 219, 219, 0.837);
+  background: rgba(85, 85, 85, 0.333);
+}
+
+/* ********* */
+/* @VISUALIZAR_STANLEE */
+/* ********* */
+.container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #b0b0b0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.container .card_visualizar {
+  padding-top: 8px;
+  width: 320px;
+  height: 100%;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+.container .next_image img {
+  padding: 10px;
+}
+.container .titulo_figura_visualizar {
+  margin-top: 4px;
+  padding-top: 8px;
+}
+.container h3 {
+  font-family: "font_regular";
+  font-size: 17px;
+}
+.container .info_figura {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.container .compartir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  margin-right: 10px;
+}
+.container .precio_figura {
+  font-family: "font_medio";
+  color: black;
+  font-size: 16px;
+}
+.container .fecha_figura {
+  font-family: "font_medio";
+  color: black;
+  font-size: 15px;
+  margin-right: 22px;
+}
+.container .card_añadir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  background: rgba(85, 85, 85, 0.333);
+  margin-left: 30px;
+}
+.container .card_añadir .agregar__texto {
+  font-family: "font_medio";
+  color: black;
+  font-size: 15px;
+  margin-left: 20px;
+}
+.container .ver_categoria {
+  padding: 8px;
+}
+.container .ver_categoria__texto {
+  font-family: "font_medio";
+  color: black;
+  font-size: 17px;
+  margin-top: 10px;
 }
 
 /* ********* */
