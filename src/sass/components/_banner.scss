@@ -19,3 +19,11 @@
   height: map-get($banner_categorias, altura);
   margin-top: map-get($banner_categorias, margen_top);
 }
+
+.Banner_descubrir{
+  display: flex;
+  align-items: map-get($banner_categorias, posicion);
+  background: map-get($colores_titulos_categorias, fondo_descubrir);
+  height: map-get($banner_categorias, altura);
+  margin-top: map-get($banner_categorias, margen_top);
+}
