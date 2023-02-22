@@ -27,3 +27,12 @@
   height: map-get($banner_categorias, altura);
   margin-top: map-get($banner_categorias, margen_top);
 }
+
+.Banner_proximamente{
+  display: flex;
+  align-items: map-get($banner_categorias, posicion);
+  background: map-get($colores_titulos_categorias, fondo_proximamente);
+  height: map-get($banner_categorias, altura);
+  margin-top: map-get($banner_categorias, margen_top);
+}
+

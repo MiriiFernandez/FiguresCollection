@@ -19,10 +19,12 @@
 }
 
 .titulo_figura {
+  display: flex;
   font-family: "font_medio";
   font-size: 17px;
   padding-top: 10px;
   margin-left: 10px;
+  text-align: center;
 }
 
 .precio_figura {
