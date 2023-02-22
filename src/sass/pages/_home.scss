@@ -1,6 +1,21 @@
 /* ********* */
 /* @HOME */
 /* ********* */
+.container_home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_home img{
+    width: 30%;
+}
+
+.Titulo_presentacion{
+    font-family: "font_negra";
+}
+
 a{
     font-family: "font_ligero";
 }
