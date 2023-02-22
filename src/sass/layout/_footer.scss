@@ -4,6 +4,7 @@
 footer{
     display: flex;
     height: 94px;
+    background-color: map-get($colores, theme);
 }
 
 ul,li{

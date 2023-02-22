@@ -519,6 +519,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   height: 94px;
+  background-color: #F26B1D;
 }
 
 ul, li {
@@ -909,7 +910,7 @@ a {
   font-family: "font_medio";
   color: black;
   font-size: 17px;
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* ********* */
