@@ -1,0 +1,82 @@
+/* ********* */
+/* @VISUALIZAR_FIGRUAS */
+/* ********* */
+.container {
+  flex-direction: column;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  .card_visualizar {
+    padding-top: 8px;
+    width: 320px;
+    height: 100%;
+    background: #c4c4c4;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33);
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  .next_image img {
+    padding: 10px;
+  }
+  .titulo_figura_visualizar {
+    margin-top: 4px;
+    padding-top: 8px;
+  }
+  h3 {
+    font-family: "font_regular";
+    font-size: 17px;
+  }
+
+  .info_figura {
+    display: flex;
+    flex-direction: column;
+  }
+  .compartir {
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+  }
+  .precio_figura {
+    font-family: "font_medio";
+    color: black;
+    font-size: 16px;
+  }
+
+  .fecha_figura {
+    font-family: "font_medio";
+    color: black;
+    font-size: 15px;
+    margin-right: 22px;
+  }
+
+  .card_añadir {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    background: rgba(85, 85, 85, 0.333);
+    margin-left: 30px;
+
+    .agregar__texto {
+      font-family: "font_medio";
+      color: black;
+      font-size: 15px;
+      margin-left: 20px;
+    }
+  }
+
+  .ver_categoria {
+    padding: 8px;
+  }
+
+  .ver_categoria__texto {
+    font-family: "font_medio";
+    color: black;
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+}

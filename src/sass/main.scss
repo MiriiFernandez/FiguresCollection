@@ -16,6 +16,7 @@
 @import 'components/banner';
 @import 'components/navbar';
 @import 'components/body';
+@import 'components/carrousel.scss';
 
 // LAYOUTS
 @import 'layout/header';
@@ -31,7 +32,7 @@
 @import 'pages/login';
 @import 'pages/registro';
 @import 'pages/novedades';
-@import 'pages/visualizar_stanlee';
+@import 'pages/visualizar_figuras';
 
 // THEMEs
 @import 'themes/dark';
