@@ -15,20 +15,31 @@
       </header>
       <!-- CARD STAN LEE -->
         <section class="card_visualizar">
-          <picture class="figuras_novedades">
-            <source
-              srcset="
-                /public/assets/img/smartphone/StanLee.webp    1x,
-                /public/assets/img/smartphone/StanLee@2x.webp 2x
-              "
-            />
-            <img class="" src="" alt="stanLee" />
-          </picture>
-          <!-- CIRCULOS SIGUIENTE IMAGEN -->
-          <span class="next_image">
-            <img src="/public/assets/img/smartphone/circle.png" alt="">
-            <img src="/public/assets/img/smartphone/circle.png" alt="">
-          </span>
+          <div class="slide">
+            <div class="slide-inner">
+                <input class="slide-open" type="radio" id="slide-1" 
+                      name="slide" aria-hidden="true" hidden="" checked="checked">
+                <div class="slide-item">
+                    <img src="assets/img/smartphone/StanLee.png">
+                </div>
+                <input class="slide-open" type="radio" id="slide-2" 
+                      name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="assets/img/smartphone/StanLee2.png">
+                </div>
+                <label for="slide-3" class="slide-control prev control-1">‹</label>
+                <label for="slide-2" class="slide-control next control-1">›</label>
+                <label for="slide-1" class="slide-control prev control-2">‹</label>
+                <ol class="slide-indicador">
+                    <li>
+                        <label for="slide-1" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-2" class="slide-circulo">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
         <!-- TITULO DE LA FIGURA -->
           <h3 class="titulo_figura_visualizar">Iron Studio - STAN LEE DELUXE</h4>
         <!-- INFORMACION FIGURA -->
@@ -48,6 +59,7 @@
              <img class="crown_colecc" src="/public/assets/img/smartphone/crown.png" alt=""> <p class="agregar__texto">Agregar a Lista</p>
             </section>
       </section>
+      <br>
         <!-- NAVBAR -->
       <nav class="navbar">
         <a href="index.html"><img src="./assets/img/svg/icon_home.svg" alt="" /></a>  
