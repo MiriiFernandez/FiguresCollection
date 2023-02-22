@@ -11,7 +11,6 @@
   background-position: right;
 }
 
-// BANNER NOVEDADES
 .Banner_novedades {
   display: flex;
   align-items: map-get($banner_categorias, posicion);
@@ -36,3 +35,13 @@
   margin-top: map-get($banner_categorias, margen_top);
 }
 
+.Banner_marvel{
+  display: flex;
+  align-items: map-get($banner_categorias, posicion);
+  background: #AB0909;
+  height: map-get($banner_categorias, altura);
+  margin-top: map-get($banner_categorias, margen_top);
+  background-image: url('/public/assets/img/smartphone/imagen_categoria_marvel.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}

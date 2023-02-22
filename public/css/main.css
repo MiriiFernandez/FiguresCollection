@@ -403,6 +403,21 @@ template {
   margin-top: 10px;
 }
 
+.Banner_marvel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #AB0909;
+  height: 65px;
+  margin-top: 10px;
+  background-image: url("/public/assets/img/smartphone/imagen_categoria_marvel.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 /* ********* */
 /* @NAVBAR */
 /* ********* */
