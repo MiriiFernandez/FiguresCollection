@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Visualizar Venom</title>
+    <title>Visualizar Thor</title>
     <link rel="stylesheet" href="/public/css/main.css" />
   </head>
   <body>
@@ -13,19 +13,35 @@
       <header>
         <input class="input_header" type="text" />
       </header>
-      <!-- CARD VENOM -->
+      <!-- CARD STAN LEE -->
         <section class="card_visualizar">
           <div class="slide">
             <div class="slide-inner">
                 <input class="slide-open" type="radio" id="slide-1" 
                       name="slide" aria-hidden="true" hidden="" checked="checked">
                 <div class="slide-item">
-                    <img src="../assets/img/smartphone/venom.png">
+                    <picture class="">
+                        <source
+                          srcset="
+                            /public/assets/img/smartphone/imagen_Thor.webp    1x,
+                            /public/assets/img/smartphone/imagen_Thor@2x.webp 2x
+                          "
+                        />
+                        <img class="" src="" alt="stanLee" />
+                      </picture>
                 </div>
                 <input class="slide-open" type="radio" id="slide-2" 
                       name="slide" aria-hidden="true" hidden="">
                 <div class="slide-item">
-                    <img src="../assets/img/smartphone/VenomV2.png">
+                    <picture class="">
+                        <source
+                          srcset="
+                            /public/assets/img/smartphone/imagen_ThorV2.webp    1x,
+                            /public/assets/img/smartphone/imagen_ThorV2@2x.webp 2x
+                          "
+                        />
+                        <img class="" src="" alt="stanLee" />
+                      </picture>
                 </div>
                 <label for="slide-3" class="slide-control prev control-1">‹</label>
                 <label for="slide-2" class="slide-control next control-1">›</label>
@@ -41,14 +57,14 @@
             </div>
         </div>
         <!-- TITULO DE LA FIGURA -->
-          <h3 class="titulo_figura_visualizar">Hot Toys - VENOM 1/6</h4>
+          <h3 class="titulo_figura_visualizar">Hot Toys Marvel: THOR AVENGERS ENDGAME</h4>
         <!-- INFORMACION FIGURA -->
         <section class="compartir">
         <img src="/public/assets/img/smartphone/share.png" alt="">
       </section>
           <section class="info_figura">
-            <p class="precio_figura">Precio: 530€</p>
-            <p class="fecha_figura">Fecha de lanzamiento: 6 / 09 / 21 </p>
+            <p class="precio_figura">Precio: 335€</p>
+            <p class="fecha_figura">Fecha de lanzamiento: 27 / 06 / 21 </p>
           </section>
             <section class="card_añadir">
               <!-- CARD AGREGAR FAVORITOS -->
@@ -63,14 +79,14 @@
         <!-- NAVBAR -->
       <nav class="navbar">
         <a href="../index.html"><img src="../assets/img/svg/icon_home.svg" alt="" /></a>  
-        <a href="../novedades.html"> <img src="../assets/img/svg/icon_discover.svg" alt="" /></a> 
+        <a href="../descubrir.html"><img src="../assets/img/svg/icon_discover.svg" alt="" /></a>
         <img src="../assets/img/svg/icon_list.svg" alt="" />
         <a href="../login.html"><img src="../assets/img/svg/icon_user.svg" alt="" /></a>
       </nav>
       <!-- Ver Mas -->
       <section class="ver_categoria">
         <p class="ver_categoria__texto">Ver Más</p>
-      <a href=""><img class="ver_categoria__marvel"src="/public/assets/img/smartphone/marvel.png" alt=""></a> 
+       <a href=""><img class="ver_categoria__marvel"src="/public/assets/img/smartphone/marvel.png" alt=""></a> 
       </section>
       <!-- FOOTER -->
     <footer>
