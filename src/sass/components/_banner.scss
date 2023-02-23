@@ -45,3 +45,14 @@
   background-repeat: no-repeat;
   background-position: right;
 }
+
+.Banner_dc{
+  display: flex;
+  align-items: map-get($banner_categorias, posicion);
+  background: #2393D9;
+  height: map-get($banner_categorias, altura);
+  margin-top: map-get($banner_categorias, margen_top);
+  background-image: url('/public/assets/img/smartphone/categoria_dc.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}

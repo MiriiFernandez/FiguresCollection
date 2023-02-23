@@ -418,6 +418,21 @@ template {
   background-position: right;
 }
 
+.Banner_dc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #2393D9;
+  height: 65px;
+  margin-top: 10px;
+  background-image: url("/public/assets/img/smartphone/categoria_dc.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 /* ********* */
 /* @NAVBAR */
 /* ********* */
@@ -1081,6 +1096,15 @@ a {
 /* @PROXIMAMENTE */
 /* ********* */
 .titulo_proximamente {
+  font-family: "font_medio";
+  font-size: 18px;
+  margin-left: 8px;
+}
+
+/* ********* */
+/* @CATEGORIAS */
+/* ********* */
+.titulo_categoria {
   font-family: "font_medio";
   font-size: 18px;
   margin-left: 8px;
