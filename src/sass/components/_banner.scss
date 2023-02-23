@@ -6,7 +6,7 @@
   background-color: map-get($colores, banner);
   width: 410px;
   height: 230px;
-  background-image: url("/assets/img/smartphone/obiwanBanner.webp");
+  background-image: url("./assets/img/smartphone/obiwanBanner.webp");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -41,7 +41,7 @@
   background: #AB0909;
   height: map-get($banner_categorias, altura);
   margin-top: map-get($banner_categorias, margen_top);
-  background-image: url('/assets/img/smartphone/imagen_categoria_marvel.png');
+  background-image: url('./assets/img/smartphone/imagen_categoria_marvel.png');
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -52,7 +52,7 @@
   background: #2393D9;
   height: map-get($banner_categorias, altura);
   margin-top: map-get($banner_categorias, margen_top);
-  background-image: url('/assets/img/smartphone/categoria_dc.png');
+  background-image: url('./assets/img/smartphone/categoria_dc.png');
   background-repeat: no-repeat;
   background-position: right;
 }
