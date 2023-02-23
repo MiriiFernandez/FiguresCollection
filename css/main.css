@@ -362,7 +362,7 @@ template {
   background-color: #515151;
   width: 410px;
   height: 230px;
-  background-image: url("/assets/img/smartphone/obiwanBanner.png");
+  background-image: url("../assets/img/smartphone/obiwanBanner.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -413,7 +413,7 @@ template {
   background: #AB0909;
   height: 65px;
   margin-top: 10px;
-  background-image: url("./assets/img/smartphone/imagen_categoria_marvel.png");
+  background-image: url("../assets/img/smartphone/imagen_categoria_marvel.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -428,7 +428,7 @@ template {
   background: #2393D9;
   height: 65px;
   margin-top: 10px;
-  background-image: url("./assets/img/smartphone/categoria_dc.png");
+  background-image: url("../assets/img/smartphone/categoria_dc.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -739,7 +739,7 @@ a {
   background-color: #D92929;
   width: 410px;
   height: 230px;
-  background-image: url("../assets/img/smartphone/thor.webp");
+  background-image: url(../assets/img/smartphone/thor.webp);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -748,7 +748,7 @@ a {
   background-color: #2393D9;
   width: 410px;
   height: 230px;
-  background-image: url("../assets/img/smartphone/blackAdam.webp");
+  background-image: url(../assets/img/smartphone/blackAdam.webp);
   background-repeat: no-repeat;
   background-position: right;
 }
