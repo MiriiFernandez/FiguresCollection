@@ -20,12 +20,28 @@
                 <input class="slide-open" type="radio" id="slide-1" 
                       name="slide" aria-hidden="true" hidden="" checked="checked">
                 <div class="slide-item">
-                    <img src="../assets/img/smartphone/Vision.png">
+                  <picture class="">
+                    <source
+                      srcset="
+                      ../assets/img/smartphone/Vision.webp    1x,
+                      ../assets/img/smartphone/Vision@2x.webp 2x
+                      "
+                    />
+                    <img class="" src="" alt="Vision" />
+                  </picture>
                 </div>
                 <input class="slide-open" type="radio" id="slide-2" 
                       name="slide" aria-hidden="true" hidden="">
                 <div class="slide-item">
-                    <img src="../assets/img/smartphone/VisionV2.png">
+                  <picture class="">
+                    <source
+                      srcset="
+                      ../assets/img/smartphone/VisionV2.webp    1x,
+                      ../assets/img/smartphone/VisionV2@2x.webp 2x
+                      "
+                    />
+                    <img class="" src="" alt="VisionV2" />
+                  </picture>
                 </div>
                 <label for="slide-3" class="slide-control prev control-1">‹</label>
                 <label for="slide-2" class="slide-control next control-1">›</label>
@@ -44,7 +60,7 @@
           <h3 class="titulo_figura_visualizar">Hot Toys Marvel: VISION</h4>
         <!-- INFORMACION FIGURA -->
         <section class="compartir">
-        <img src="/public/assets/img/smartphone/share.png" alt="">
+        <img src="/assets/img/smartphone/share.png" alt="">
       </section>
           <section class="info_figura">
             <p class="precio_figura">Precio: 236 €</p>
@@ -52,25 +68,25 @@
           </section>
             <section class="card_añadir">
               <!-- CARD AGREGAR FAVORITOS -->
-             <img class="red_heart" src="/public/assets/img/smartphone/heart_red.png" alt=""> <p class="agregar__texto">Agregar a Favoritos</p>
+             <img class="red_heart" src="/assets/img/smartphone/heart_red.png" alt=""> <p class="agregar__texto">Agregar a Favoritos</p>
             </section>
             <section class="card_añadir">
               <!-- CARD AGREGAR FAVORITOS -->
-             <img class="crown_colecc" src="/public/assets/img/smartphone/crown.png" alt=""> <p class="agregar__texto">Agregar a Lista</p>
+             <img class="crown_colecc" src="/assets/img/smartphone/crown.png" alt=""> <p class="agregar__texto">Agregar a Lista</p>
             </section>
       </section>
       <br>
         <!-- NAVBAR -->
       <nav class="navbar">
-        <a href="index.html"><img src="./assets/img/svg/icon_home.svg" alt="" /></a>  
-        <a href="novedades.html"> <img src="./assets/img/svg/icon_discover.svg" alt="" /></a> 
-        <img src="./assets/img/svg/icon_list.svg" alt="" />
-        <a href="login.html"><img src="./assets/img/svg/icon_user.svg" alt="" /></a>
+        <a href="index.html"><img src="../assets/img/svg/icon_home.svg" alt="" /></a>  
+        <a href="novedades.html"> <img src="../assets/img/svg/icon_discover.svg" alt="" /></a> 
+        <img src="../assets/img/svg/icon_list.svg" alt="" />
+        <a href="login.html"><img src="../assets/img/svg/icon_user.svg" alt="" /></a>
       </nav>
       <!-- Ver Mas -->
       <section class="ver_categoria">
         <p class="ver_categoria__texto">Ver Más</p>
-       <a href=""><img class="ver_categoria__marvel"src="/public/assets/img/smartphone/marvel.png" alt=""></a> 
+       <a href="../marvel.html"><img class="ver_categoria__marvel"src="/assets/img/smartphone/marvel.png" alt=""></a> 
       </section>
       <!-- FOOTER -->
     <footer>
@@ -88,7 +104,7 @@
       <section class="contacto">
         <b> <a href=""
           >Contáctanos!</b>
-          <img src="/public/assets/img/svg/icon_mssg.svg" alt="" />
+          <img src="/assets/img/svg/icon_mssg.svg" alt="" />
         </a>
       </section>
     </footer>
