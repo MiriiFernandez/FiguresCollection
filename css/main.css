@@ -329,19 +329,19 @@ template {
 /* ********* */
 @font-face {
   font-family: "font_negra";
-  src: url(/public/assets/font/LEMONMILK-Bold.woff2);
+  src: url("../../../assets/font/LEMONMILK-Bold.woff2");
 }
 @font-face {
   font-family: "font_regular";
-  src: url(/public/assets/font/LEMONMILK-Regular.woff2);
+  src: url(../../../assets/font/LEMONMILK-Regular.woff2);
 }
 @font-face {
   font-family: "font_medio";
-  src: url(/public/assets/font/LEMONMILK-Medium.woff2);
+  src: url(../../../assets/font/LEMONMILK-Medium.woff2);
 }
 @font-face {
   font-family: "font_ligero";
-  src: url(/public/assets/font/LEMONMILK-Light.woff2);
+  src: url(../../../assets/font/LEMONMILK-Light.woff2);
 }
 /* ********* */
 /* @BUTTONS */
@@ -362,7 +362,7 @@ template {
   background-color: #515151;
   width: 410px;
   height: 230px;
-  background-image: url("/public/assets/img/smartphone/obiwanBanner.webp");
+  background-image: url("./assets/img/smartphone/obiwanBanner.webp");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -413,7 +413,7 @@ template {
   background: #AB0909;
   height: 65px;
   margin-top: 10px;
-  background-image: url("/public/assets/img/smartphone/imagen_categoria_marvel.png");
+  background-image: url("./assets/img/smartphone/imagen_categoria_marvel.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -428,7 +428,7 @@ template {
   background: #2393D9;
   height: 65px;
   margin-top: 10px;
-  background-image: url("/public/assets/img/smartphone/categoria_dc.png");
+  background-image: url("./assets/img/smartphone/categoria_dc.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -636,7 +636,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("/public/assets/img/smartphone/logofc.png");
+  background: url("/assets/img/smartphone/logofc.png");
   background-color: #F26B1D;
   width: 100%;
   background-size: 90px;
@@ -644,7 +644,7 @@ header {
   height: 80px;
 }
 header .input_header {
-  background: url("/public/assets/img/smartphone/lupa.png");
+  background: url("/assets/img/smartphone/lupa.png");
   background-size: 35px;
   background-position: 165px center;
   background-repeat: no-repeat;
@@ -738,7 +738,7 @@ a {
   background-color: #D92929;
   width: 410px;
   height: 230px;
-  background-image: url("/public/assets/img/smartphone/thor.webp");
+  background-image: url("/assets/img/smartphone/thor.webp");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -747,7 +747,7 @@ a {
   background-color: #2393D9;
   width: 410px;
   height: 230px;
-  background-image: url("/public/assets/img/smartphone/blackAdam.webp");
+  background-image: url("/assets/img/smartphone/blackAdam.webp");
   background-repeat: no-repeat;
   background-position: right;
 }
