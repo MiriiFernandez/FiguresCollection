@@ -329,19 +329,19 @@ template {
 /* ********* */
 @font-face {
   font-family: "font_negra";
-  src: url("../../../assets/font/LEMONMILK-Bold.woff2");
+  src: url("/assets/font/LEMONMILK-Bold.woff2");
 }
 @font-face {
   font-family: "font_regular";
-  src: url(../../../assets/font/LEMONMILK-Regular.woff2);
+  src: url(/assets/font/LEMONMILK-Regular.woff2);
 }
 @font-face {
   font-family: "font_medio";
-  src: url(../../../assets/font/LEMONMILK-Medium.woff2);
+  src: url(/assets/font/LEMONMILK-Medium.woff2);
 }
 @font-face {
   font-family: "font_ligero";
-  src: url(../../../assets/font/LEMONMILK-Light.woff2);
+  src: url(/assets/font/LEMONMILK-Light.woff2);
 }
 /* ********* */
 /* @BUTTONS */
