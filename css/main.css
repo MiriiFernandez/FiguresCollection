@@ -739,7 +739,7 @@ a {
   background-color: #D92929;
   width: 410px;
   height: 230px;
-  background-image: url("/assets/img/smartphone/thor.webp");
+  background-image: url("../assets/img/smartphone/thor.webp");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -748,7 +748,7 @@ a {
   background-color: #2393D9;
   width: 410px;
   height: 230px;
-  background-image: url("/assets/img/smartphone/blackAdam.webp");
+  background-image: url("../assets/img/smartphone/blackAdam.webp");
   background-repeat: no-repeat;
   background-position: right;
 }
