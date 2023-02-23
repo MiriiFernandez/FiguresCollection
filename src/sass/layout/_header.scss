@@ -4,7 +4,7 @@
 
 header {
   display: flex;
-  background: url("/public/assets/img/smartphone/logofc.png");
+  background: url("../../../assets/img/smartphone/logofc.png");
   background-color: map-get($colores, theme);
   width: 100%;
   background-size: 90px;
@@ -12,7 +12,7 @@ header {
   height: 80px;
 
   .input_header {
-    background: url("/public/assets/img/smartphone/lupa.png");
+    background: url("../../../assets/img/smartphone/lupa.png");
     background-size: 35px;
     background-position: 165px center;
     background-repeat: no-repeat;
