@@ -794,7 +794,7 @@ a {
 /* ********* */
 /* @LOGIN */
 /* ********* */
-.container {
+.container_login {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -807,60 +807,60 @@ a {
           flex-direction: column;
   text-align: center;
 }
-.container .logo_login {
+.container_login .logo_login {
   margin-top: 5rem;
 }
-.container .login_form input {
+.container_login .login_form input {
   border-radius: 19px;
   height: 35px;
   width: 250px;
   margin-top: 10px;
   margin: 14px;
 }
-.container .login_form input::-webkit-input-placeholder {
+.container_login .login_form input::-webkit-input-placeholder {
   padding: 10px;
   font-size: 12px;
 }
-.container .login_form input::-moz-placeholder {
+.container_login .login_form input::-moz-placeholder {
   padding: 10px;
   font-size: 12px;
 }
-.container .login_form input:-ms-input-placeholder {
+.container_login .login_form input:-ms-input-placeholder {
   padding: 10px;
   font-size: 12px;
 }
-.container .login_form input::-ms-input-placeholder {
+.container_login .login_form input::-ms-input-placeholder {
   padding: 10px;
   font-size: 12px;
 }
-.container .login_form input::placeholder {
+.container_login .login_form input::placeholder {
   padding: 10px;
   font-size: 12px;
 }
-.container .login_form .login_btn {
+.container_login .login_form .login_btn {
   border-radius: 24px;
   background-color: #2393d9;
   padding: 5px 15px 5px 5px;
   margin-bottom: 30px;
   margin-top: 8px;
 }
-.container .login_form .login_btn a {
+.container_login .login_form .login_btn a {
   color: black;
   font-family: "font_regular";
   font-size: 12px;
 }
-.container .iniciaSesion h4 {
+.container_login h4 {
   font-family: "font_negra";
-  font-size: 25px;
+  font-size: 20px;
   letter-spacing: 4px;
 }
-.container p {
+.container_login p {
   color: white;
   font-size: 14px;
   font-family: "font_regular";
   margin-top: 15px;
 }
-.container .link_toregistro {
+.container_login .link_toregistro {
   font-size: 18px;
   font-family: "font_regular";
 }
@@ -868,7 +868,7 @@ a {
 /* ********* */
 /* @REGISTRO */
 /* ********* */
-.container {
+.container_registro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -881,46 +881,51 @@ a {
           flex-direction: column;
   text-align: center;
 }
-.container .registro_form input {
+.container_registro .registro_form input {
   border-radius: 19px;
   height: 35px;
   width: 250px;
   margin-top: 10px;
   margin: 14px;
 }
-.container .registro_form input::-webkit-input-placeholder {
+.container_registro .registro_form .titulo_crearcuenta h4 {
+  font-family: "font_negra";
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+.container_registro .registro_form input::-webkit-input-placeholder {
   padding: 10px;
   font-size: 12px;
 }
-.container .registro_form input::-moz-placeholder {
+.container_registro .registro_form input::-moz-placeholder {
   padding: 10px;
   font-size: 12px;
 }
-.container .registro_form input:-ms-input-placeholder {
+.container_registro .registro_form input:-ms-input-placeholder {
   padding: 10px;
   font-size: 12px;
 }
-.container .registro_form input::-ms-input-placeholder {
+.container_registro .registro_form input::-ms-input-placeholder {
   padding: 10px;
   font-size: 12px;
 }
-.container .registro_form input::placeholder {
+.container_registro .registro_form input::placeholder {
   padding: 10px;
   font-size: 12px;
 }
-.container .registro_form .registro_btn {
+.container_registro .registro_form .registro_btn {
   border-radius: 24px;
   background-color: #2393d9;
   padding: 5px 15px 5px 5px;
   margin-bottom: 30px;
   margin-top: 8px;
 }
-.container .registro_form .registro_btn a {
+.container_registro .registro_form .registro_btn a {
   color: black;
   font-family: "font_regular";
   font-size: 12px;
 }
-.container .link_tologin {
+.container_registro .link_tologin {
   font-size: 18px;
   font-family: "font_regular";
 }
