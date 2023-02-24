@@ -700,6 +700,9 @@ header .logo_header img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 410px;
   background-color: #CEC9C9;
 }

@@ -4,6 +4,7 @@
 .categorias{
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 410px;
     background-color: map-get($colores, fondo_categorias );
 }
