@@ -6,7 +6,7 @@ header {
   display: flex;
   background: url("../assets/img/smartphone/logofc.png");
   background-color: map-get($colores, theme);
-  width: 100%;
+  width: 100vw;
   background-size: 90px;
   background-repeat: no-repeat;
   height: 80px;
