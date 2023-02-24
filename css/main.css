@@ -470,6 +470,21 @@ header {
   margin-left: 8px;
 }
 
+.Banner_misFavoritos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F28705;
+  height: 65px;
+  margin-top: 10px;
+  background-image: url("../assets/img/smartphone/heart.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
 /* ********* */
 /* @NAVBAR */
 /* ********* */

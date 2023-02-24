@@ -75,3 +75,14 @@
   font-size: 18px;
   margin-left: 8px;
 }
+
+.Banner_misFavoritos{
+  display: flex;
+  align-items: map-get($banner_categorias, posicion);
+  background: #F28705;
+  height: map-get($banner_categorias, altura);
+  margin-top: map-get($banner_categorias, margen_top);
+  background-image: url("../assets/img/smartphone/heart.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
