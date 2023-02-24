@@ -318,6 +318,15 @@ template {
 /* ********* */
 /* @RESET */
 /* ********* */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: none;
+}
+
 /* ********* */
 /* @VARIABLES */
 /* ********* */
@@ -659,7 +668,7 @@ header {
   display: flex;
   background: url("../assets/img/smartphone/logofc.png");
   background-color: #F26B1D;
-  width: 100vw;
+  background: #000;
   background-size: 90px;
   background-repeat: no-repeat;
   height: 80px;
@@ -913,7 +922,6 @@ a {
 /* ********* */
 .fondo_categorias {
   background: #b0b0b0;
-  padding-right: 10px;
   width: 100%;
 }
 
