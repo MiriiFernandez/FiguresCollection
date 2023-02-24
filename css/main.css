@@ -515,7 +515,6 @@ template {
 /* ********* */
 body {
   background-color: #F26B1D;
-  height: 100vh;
 }
 
 /* ********* */
@@ -683,7 +682,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 100vw;
   background-color: #F26B1D;
 }
 
@@ -989,6 +988,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   background: #fff;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

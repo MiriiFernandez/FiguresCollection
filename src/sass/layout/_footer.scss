@@ -3,7 +3,7 @@
 /* ********* */
 footer{
     display: flex;
-    width: 100%;
+    width: 100vw;
     background-color: map-get($colores, theme);
 }
 
