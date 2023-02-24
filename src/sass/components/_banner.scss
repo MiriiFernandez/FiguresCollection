@@ -19,7 +19,7 @@
   margin-top: map-get($banner_categorias, margen_top);
 }
 
-.Banner_descubrir{
+.Banner_descubrir {
   display: flex;
   align-items: map-get($banner_categorias, posicion);
   background: map-get($colores_titulos_categorias, fondo_descubrir);
@@ -27,7 +27,7 @@
   margin-top: map-get($banner_categorias, margen_top);
 }
 
-.Banner_proximamente{
+.Banner_proximamente {
   display: flex;
   align-items: map-get($banner_categorias, posicion);
   background: map-get($colores_titulos_categorias, fondo_proximamente);
@@ -35,24 +35,42 @@
   margin-top: map-get($banner_categorias, margen_top);
 }
 
-.Banner_marvel{
+.Banner_marvel {
   display: flex;
   align-items: map-get($banner_categorias, posicion);
-  background: #AB0909;
+  background: #ab0909;
   height: map-get($banner_categorias, altura);
   margin-top: map-get($banner_categorias, margen_top);
-  background-image: url('../assets/img/smartphone/imagen_categoria_marvel.png');
+  background-image: url("../assets/img/smartphone/imagen_categoria_marvel.png");
   background-repeat: no-repeat;
   background-position: right;
 }
 
-.Banner_dc{
+.Banner_dc {
   display: flex;
   align-items: map-get($banner_categorias, posicion);
-  background: #2393D9;
+  background: #2393d9;
   height: map-get($banner_categorias, altura);
   margin-top: map-get($banner_categorias, margen_top);
-  background-image: url('../assets/img/smartphone/categoria_dc.png');
+  background-image: url("../assets/img/smartphone/categoria_dc.png");
   background-repeat: no-repeat;
   background-position: right;
+}
+
+.Banner_starwars {
+  display: flex;
+  align-items: map-get($banner_categorias, posicion);
+  background: #171717;
+  height: map-get($banner_categorias, altura);
+  margin-top: map-get($banner_categorias, margen_top);
+  background-image: url("../assets/img/smartphone/categoria_starwars.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.titulo_starwars {
+  color: #ffca0e;
+  font-family: "font_medio";
+  font-size: 18px;
+  margin-left: 8px;
 }

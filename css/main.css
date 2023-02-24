@@ -410,7 +410,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #AB0909;
+  background: #ab0909;
   height: 65px;
   margin-top: 10px;
   background-image: url("../assets/img/smartphone/imagen_categoria_marvel.png");
@@ -425,12 +425,34 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #2393D9;
+  background: #2393d9;
   height: 65px;
   margin-top: 10px;
   background-image: url("../assets/img/smartphone/categoria_dc.png");
   background-repeat: no-repeat;
   background-position: right;
+}
+
+.Banner_starwars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #171717;
+  height: 65px;
+  margin-top: 10px;
+  background-image: url("../assets/img/smartphone/categoria_starwars.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.titulo_starwars {
+  color: #ffca0e;
+  font-family: "font_medio";
+  font-size: 18px;
+  margin-left: 8px;
 }
 
 /* ********* */
