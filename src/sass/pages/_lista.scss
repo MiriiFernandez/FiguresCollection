@@ -1,8 +1,41 @@
 /* ********* */
 /* @LISTA */
 /* ********* */
-.listado{
-    margin-top: 10px;
-    background: #fff;
-    height: 400px;
+.listado {
+  padding: 12px;
+  margin-top: 10px;
+  background: #fff;
+  height: 400px;
+  grid-template-columns: repeat(2, 1fr);
+
+  .favoritos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+
+    .texto_favoritos {
+      padding-left: 30px;
+    }
+
+    .titulo_favoritos {
+      font-family: "font_regular";
+      font-size: 20px;
+    }
+
+    .desc_fav{
+        font-family: "font_ligero";
+    }
+  }
+
+  .icono_fav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c4c4c4;
+    width: 120px;
+    height: 105px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.33);
+  }
 }
