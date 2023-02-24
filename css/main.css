@@ -1161,10 +1161,8 @@ a {
   margin-top: 10px;
   background: #fff;
   height: 400px;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
 }
-.listado .favoritos {
+.listado .colecciones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1177,17 +1175,17 @@ a {
           align-items: center;
   padding: 10px;
 }
-.listado .favoritos .texto_favoritos {
+.listado .colecciones .texto_listado {
   padding-left: 30px;
 }
-.listado .favoritos .titulo_favoritos {
+.listado .colecciones .titulo_listado {
   font-family: "font_regular";
   font-size: 20px;
 }
-.listado .favoritos .desc_fav {
+.listado .colecciones .desc_listado {
   font-family: "font_ligero";
 }
-.listado .icono_fav {
+.listado .colecciones .icono_listado {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
