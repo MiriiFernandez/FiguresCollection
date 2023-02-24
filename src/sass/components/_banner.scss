@@ -39,6 +39,7 @@
   display: flex;
   align-items: map-get($banner_categorias, posicion);
   background: #ab0909;
+  width: 100%;
   height: map-get($banner_categorias, altura);
   margin-top: map-get($banner_categorias, margen_top);
   background-image: url("../assets/img/smartphone/imagen_categoria_marvel.png");
