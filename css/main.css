@@ -1234,6 +1234,16 @@ a {
 }
 
 /* ********* */
+/* @TERMINOS */
+/* ********* */
+.container_terminos {
+  padding: 12px;
+  margin-top: 10px;
+  background: #fff;
+  height: 520px;
+}
+
+/* ********* */
 /* @THEMEDARK */
 /* ********* */
 /* ********* */
