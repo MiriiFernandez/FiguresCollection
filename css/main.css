@@ -1246,6 +1246,44 @@ a {
 /* ********* */
 /* @CONTACTO */
 /* ********* */
+.container_contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.container_contacto .contactanos {
+  font-family: "font_negra";
+  font-size: 20px;
+}
+.container_contacto input {
+  border-radius: 19px;
+  height: 35px;
+  width: 250px;
+  margin-top: 10px;
+  margin: 14px;
+}
+.container_contacto .mensaje_input {
+  height: 120px;
+}
+.container_contacto .contact_btn {
+  border-radius: 20px;
+  background-color: #2393d9;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+.container_contacto .contact_btn .contact_btn_texto {
+  color: white;
+}
+
 /* ********* */
 /* @THEMEDARK */
 /* ********* */
