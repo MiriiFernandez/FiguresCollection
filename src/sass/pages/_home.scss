@@ -3,6 +3,10 @@
 /* ********* */
 a {
   font-family: "font_ligero";
+  
+  @media screen and (min-width: 1366px) {
+    font-size: 22px;
+  }
 }
 
 .contenido_banner {
