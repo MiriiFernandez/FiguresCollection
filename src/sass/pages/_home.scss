@@ -1,24 +1,42 @@
 /* ********* */
 /* @HOME */
 /* ********* */
-a{
-    font-family: "font_ligero";
+a {
+  font-family: "font_ligero";
 }
 
-.descubrir{
-    background-color: map-get($colores , banner_novedades );
-    width: 410px;
-    height: 230px;
-    background-image: url(../assets/img/smartphone/thor.webp);
-    background-repeat: no-repeat;
-    background-position: right;
+.banner_texto {
+  display: none;
+
+  @media screen and (min-width: 1366px) {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+.titulo_banner_novedades {
+  font-family: "font_ligero";
 }
 
-.proximamente{
-    background-color: map-get($colores, banner_proximamente );
-    width: 410px;
-    height: 230px;
-    background-image: url(../assets/img/smartphone/blackAdam.webp);
-    background-repeat: no-repeat;
-    background-position: right;
+.subtitulo_banner_novedades {
+  font-family: "font_ligero";
+  color: white;
+}
+
+.descubrir {
+  background-color: map-get($colores, banner_novedades);
+  width: 410px;
+  height: 230px;
+  background-image: url(../assets/img/smartphone/thor.webp);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.proximamente {
+  background-color: map-get($colores, banner_proximamente);
+  width: 410px;
+  height: 230px;
+  background-image: url(../assets/img/smartphone/blackAdam.webp);
+  background-repeat: no-repeat;
+  background-position: right;
 }
