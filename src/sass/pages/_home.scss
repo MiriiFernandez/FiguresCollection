@@ -12,15 +12,16 @@ a {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    
+    .titulo_banner_novedades {
+      font-family: "font_ligero";
+    }
+    
+    .subtitulo_banner_novedades {
+      font-family: "font_ligero";
+      color: white;
+    }
   }
-}
-.titulo_banner_novedades {
-  font-family: "font_ligero";
-}
-
-.subtitulo_banner_novedades {
-  font-family: "font_ligero";
-  color: white;
 }
 
 .descubrir {
