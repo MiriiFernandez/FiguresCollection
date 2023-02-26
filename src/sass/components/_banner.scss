@@ -17,12 +17,19 @@
   }
 }
 
-.Banner_novedades {
-  display: flex;
-  align-items: map-get($banner_categorias, posicion);
-  background: map-get($colores_titulos_categorias, fondo_novedades);
-  height: map-get($banner_categorias, altura);
-  margin-top: map-get($banner_categorias, margen_top);
+.banner_secundarios {
+  @media screen and (min-width: 1366px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .Banner_novedades {
+    display: flex;
+    align-items: map-get($banner_categorias, posicion);
+    background: map-get($colores_titulos_categorias, fondo_novedades);
+    height: map-get($banner_categorias, altura);
+    margin-top: map-get($banner_categorias, margen_top);
+  }
 }
 
 .Banner_descubrir {
@@ -31,6 +38,7 @@
   background: map-get($colores_titulos_categorias, fondo_descubrir);
   height: map-get($banner_categorias, altura);
   margin-top: map-get($banner_categorias, margen_top);
+
 }
 
 .Banner_proximamente {

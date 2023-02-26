@@ -394,7 +394,16 @@ header {
   }
 }
 
-.Banner_novedades {
+@media screen and (min-width: 1366px) {
+  .banner_secundarios {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+.banner_secundarios .Banner_novedades {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,6 +537,11 @@ header {
   position: fixed;
   width: 100%;
   background-color: #F26B1D;
+}
+@media screen and (min-width: 1366px) {
+  .navbar {
+    display: none;
+  }
 }
 
 .navbar a {
@@ -872,18 +886,42 @@ a {
   background-color: #D92929;
   width: 410px;
   height: 230px;
-  background-image: url(../assets/img/smartphone/thor.webp);
+  background-image: url(../assets/img/smartphone/Thor.png);
   background-repeat: no-repeat;
   background-position: right;
+  background-size: contain;
+}
+@media screen and (min-width: 1366px) {
+  .descubrir {
+    width: 100%;
+    height: 400px;
+  }
 }
 
 .proximamente {
   background-color: #2393D9;
   width: 410px;
   height: 230px;
-  background-image: url(../assets/img/smartphone/blackAdam.webp);
+  background-image: url(../assets/img/smartphone/BlackAdam.png);
   background-repeat: no-repeat;
   background-position: right;
+}
+@media screen and (min-width: 1366px) {
+  .proximamente {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+    height: 400px;
+    background-image: url(../assets/img/smartphone/BlackAdam.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
 }
 
 /* ********* */
