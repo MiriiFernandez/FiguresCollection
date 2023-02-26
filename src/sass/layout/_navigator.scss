@@ -5,13 +5,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
     width: 410px;
     background-color: map-get($colores, fondo_categorias );
+
+    @media screen and (min-width: 1366px) {
+        width: 100%;
+    }
 }
 .categorias img{
-    aspect-ratio: 3/2;
-    object-fit: contain;
     margin: 10px;
+
+    @media screen and (min-width: 1366px) {
+       width: 120%;
+    }
 }
 
 
