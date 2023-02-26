@@ -368,6 +368,12 @@ header {
   height: 40px;
   margin: 50px 40px 40px 40px;
 }
+@media screen and (min-width: 1366px) {
+  .btn {
+    width: 251px;
+    height: 61px;
+  }
+}
 
 /* ********* */
 /* @BANNER */
@@ -383,11 +389,8 @@ header {
 @media screen and (min-width: 1366px) {
   .banner {
     width: 100%;
-    height: 300px;
-    background-size: contain;
+    height: 400px;
     background-image: url("../assets/img/desktop/ObiWanBannerD.png");
-    background-size: contain;
-    background-position: center;
   }
 }
 
@@ -822,11 +825,11 @@ a {
   font-family: "font_ligero";
 }
 
-.banner_texto {
+.contenido_banner {
   display: none;
 }
 @media screen and (min-width: 1366px) {
-  .banner_texto {
+  .contenido_banner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -834,14 +837,19 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 10px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 18px 0px 0px 90px;
   }
-  .banner_texto .titulo_banner_novedades {
-    font-family: "font_ligero";
+  .contenido_banner .titulo_banner_novedades {
+    font-family: "font_negra";
+    font-size: 38px;
   }
-  .banner_texto .subtitulo_banner_novedades {
+  .contenido_banner .subtitulo_banner_novedades {
     font-family: "font_ligero";
     color: white;
+    font-size: 21px;
   }
 }
 

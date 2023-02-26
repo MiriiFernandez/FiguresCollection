@@ -10,4 +10,9 @@
     height: map-get($botones, longitud);
     margin: 50px 40px 40px 40px;
 
+
+    @media screen and (min-width: 1366px) {
+        width: 251px;
+        height: 61px;
+      }
 }

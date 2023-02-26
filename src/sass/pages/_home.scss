@@ -5,21 +5,25 @@ a {
   font-family: "font_ligero";
 }
 
-.banner_texto {
+.contenido_banner {
   display: none;
 
   @media screen and (min-width: 1366px) {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    justify-content: center;
+    padding: 18px 0px 0px 90px;
     
     .titulo_banner_novedades {
-      font-family: "font_ligero";
+      font-family: "font_negra";
+      font-size: 38px;
     }
     
     .subtitulo_banner_novedades {
       font-family: "font_ligero";
       color: white;
+      font-size: 21px;
+      
     }
   }
 }
