@@ -1,38 +1,90 @@
 /* ********* */
 /* @FOOTER */
 /* ********* */
-footer{
+footer {
+  display: flex;
+  width: 100vw;
+  background-color: map-get($colores, theme);
+
+  @media screen and (min-width: 1366px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url("/assets/img/desktop/logo_color.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+}
+
+ul,
+li {
+  list-style: none;
+  font-family: "font_ligero";
+}
+
+.info {
+  display: flex;
+  @media screen and (min-width: 1366px) {
+    grid-column: 3/3;
+  }
+}
+
+.terminos {
+  font-size: 10px;
+  @media screen and (min-width: 1366px) {
+  }
+}
+.rdds {
+  display: none;
+  @media screen and (min-width: 1366px) {
     display: flex;
-    width: 100vw;
-    background-color: map-get($colores, theme);
+    align-items: center;
+    flex-direction: column;
+    
+
+    .usuario_rdds{
+        font-family: "font_ligero";
+        font-size: 15px;
+    }
+
+  }
 }
 
-ul,li{
-    list-style: none;
-    font-family: "font_ligero";
+
+.copy {
+  font-size: 9px;
+  margin-top: 20px;
 }
 
-.terminos{
-    font-size: 10px;
+a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
-.copy{
-    font-size: 9px;
-    margin-top: 20px;
-}
-
-a{
-    list-style: none;
-    text-decoration: none;
-    color: black;
-}
-
-.contacto{
+.contacto {
+  display: flex;
+  margin-top: 20px;
+  @media screen and (min-width: 1366px) {
     display: flex;
-    margin-top: 20px;
+    flex-direction: column;
+    padding: 18px;
+    grid-row: 1 / 3;
+    align-items: center;
+    padding: 10px;
+  }
 }
 
-.contacto a{
-    font-family: "font_ligero";
-    margin-left: 7px;
+.contacto a {
+  font-family: "font_ligero";
+  margin-left: 7px;
+  @media screen and (min-width: 1366px) {
+  }
+}
+
+.contacto img {
+  @media screen and (min-width: 1366px) {
+    margin-top: 20px;
+    width: 50px;
+  }
 }

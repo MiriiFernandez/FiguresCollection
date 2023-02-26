@@ -803,14 +803,60 @@ footer {
   width: 100vw;
   background-color: #F26B1D;
 }
+@media screen and (min-width: 1366px) {
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    background-image: url("/assets/img/desktop/logo_color.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+}
 
-ul, li {
+ul,
+li {
   list-style: none;
   font-family: "font_ligero";
 }
 
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 1366px) {
+  .info {
+    -ms-grid-column: 3;
+    grid-column: 3/3;
+  }
+}
+
 .terminos {
   font-size: 10px;
+}
+.rdds {
+  display: none;
+}
+@media screen and (min-width: 1366px) {
+  .rdds {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .rdds .usuario_rdds {
+    font-family: "font_ligero";
+    font-size: 15px;
+  }
 }
 
 .copy {
@@ -830,10 +876,35 @@ a {
   display: flex;
   margin-top: 20px;
 }
+@media screen and (min-width: 1366px) {
+  .contacto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 18px;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+  }
+}
 
 .contacto a {
   font-family: "font_ligero";
   margin-left: 7px;
+}
+@media screen and (min-width: 1366px) {
+  .contacto img {
+    margin-top: 20px;
+    width: 50px;
+  }
 }
 
 /* ********* */
