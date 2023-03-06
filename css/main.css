@@ -565,6 +565,16 @@ header {
   background-repeat: no-repeat;
   background-position: right;
 }
+@media screen and (min-width: 1366px) {
+  .Banner_misFavoritos {
+    width: 100%;
+    height: 200px;
+    background-image: url("../assets/img/desktop/fondo_BannerFav.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #171717;
+  }
+}
 
 .Banner_miColeccion {
   display: -webkit-box;
@@ -579,6 +589,17 @@ header {
   background-image: url("../assets/img/smartphone/crown.png");
   background-repeat: no-repeat;
   background-position: right;
+}
+@media screen and (min-width: 1366px) {
+  .Banner_miColeccion {
+    width: 100%;
+    height: 200px;
+    background-image: url("../assets/img/desktop/fondo_BannerColecc.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: right;
+    background-color: #171717;
+  }
 }
 
 /* ********* */
