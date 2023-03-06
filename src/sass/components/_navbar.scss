@@ -9,10 +9,12 @@
   justify-content: space-evenly;
   position: fixed;
   width: 100%;
+
   background-color: map-get($colores, theme);
 
   @media screen and (min-width: 1366px) {
     display: none;
+    
   }
 }
 

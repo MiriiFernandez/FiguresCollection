@@ -391,6 +391,7 @@ header {
     width: 100%;
     height: 400px;
     background-image: url("../assets/img/desktop/ObiWanBannerD.png");
+    background-size: contain;
   }
 }
 
@@ -403,7 +404,8 @@ header {
     gap: 30px;
   }
 }
-.banner_secundarios .Banner_novedades {
+
+.Banner_novedades {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -413,6 +415,17 @@ header {
   background: #2393D9;
   height: 65px;
   margin-top: 10px;
+}
+@media screen and (min-width: 1366px) {
+  .Banner_novedades {
+    width: 100%;
+    height: 320px;
+    background-image: url("../assets/img/desktop/fondo_BannerNovedades.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #171717;
+  }
 }
 
 .Banner_descubrir {
@@ -426,6 +439,17 @@ header {
   height: 65px;
   margin-top: 10px;
 }
+@media screen and (min-width: 1366px) {
+  .Banner_descubrir {
+    width: 100%;
+    height: 320px;
+    background-image: url("../assets/img/desktop/fondo_BannerDescubrir.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #171717;
+  }
+}
 
 .Banner_proximamente {
   display: -webkit-box;
@@ -437,6 +461,17 @@ header {
   background: #D92929;
   height: 65px;
   margin-top: 10px;
+}
+@media screen and (min-width: 1366px) {
+  .Banner_proximamente {
+    width: 100%;
+    height: 320px;
+    background-image: url("../assets/img/desktop/fondo_BannerProximamente.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #171717;
+  }
 }
 
 .Banner_marvel {
@@ -807,8 +842,8 @@ footer {
   footer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
     background-image: url("/assets/img/desktop/logo_color.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -1150,6 +1185,13 @@ a {
   font-size: 18px;
   margin-left: 8px;
 }
+@media screen and (min-width: 1366px) {
+  .titulo_novedades {
+    color: white;
+    margin-left: 30px;
+    font-size: 28px;
+  }
+}
 
 .card_figuras {
   display: -webkit-box;
@@ -1165,6 +1207,14 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media screen and (min-width: 1366px) {
+  .card_figuras {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .titulo_figura {
@@ -1354,6 +1404,13 @@ a {
   font-size: 18px;
   margin-left: 8px;
 }
+@media screen and (min-width: 1366px) {
+  .titulo_descubrir {
+    color: white;
+    margin-left: 30px;
+    font-size: 28px;
+  }
+}
 
 /* ********* */
 /* @PROXIMAMENTE */
@@ -1362,6 +1419,13 @@ a {
   font-family: "font_medio";
   font-size: 18px;
   margin-left: 8px;
+}
+@media screen and (min-width: 1366px) {
+  .titulo_proximamente {
+    color: white;
+    margin-left: 30px;
+    font-size: 28px;
+  }
 }
 
 /* ********* */
