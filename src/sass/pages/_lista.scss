@@ -6,6 +6,12 @@
   margin-top: 10px;
   background: #fff;
   height: 520px;
+  @media screen and (min-width: 1366px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .colecciones {
     display: flex;
@@ -20,10 +26,16 @@
     .titulo_listado {
       font-family: "font_regular";
       font-size: 20px;
+      @media screen and (min-width: 1366px) {
+        font-size: 26px;
+      }
     }
 
     .desc_listado{
         font-family: "font_ligero";
+        @media screen and (min-width: 1366px) {
+          font-size: 20px;
+        }
     }
     .icono_listado {
       display: flex;
@@ -34,6 +46,16 @@
       height: 105px;
       border-radius: 4px;
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.33);
+      @media screen and (min-width: 1366px) {
+        width: 171px;
+        height: 152px;
+      }
+    }
+    .icono_listado img{
+      @media screen and (min-width: 1366px) {
+        width: 130%;
+        margin-right: 10px;
+      }
     }
   }
 
