@@ -1,9 +1,44 @@
 /* ********* */
 /* @CATEGORIAS */
 /* ********* */
+.Banner_marvel img {
+  display: none;
+  @media screen and (min-width: 1366px) {
+    display: flex;
+  }
+}
+
+.Banner_dc img {
+  display: none;
+  @media screen and (min-width: 1366px) {
+    display: flex;
+    margin-left: 80px;
+  }
+}
+
+.Banner_starwars img {
+  display: none;
+  @media screen and (min-width: 1366px) {
+    display: flex;
+    margin-left: 80px;
+  }
+}
+
+.titulo_starwars {
+  color: #ffca0e;
+  font-family: "font_medio";
+  font-size: 18px;
+  margin-left: 8px;
+  @media screen and (min-width: 1366px) {
+    display: none;
+  }
+}
 
 .titulo_categoria {
-    font-family: "font_medio";
-    font-size: 18px;
-    margin-left: 8px;
+  font-family: "font_medio";
+  font-size: 18px;
+  margin-left: 8px;
+  @media screen and (min-width: 1366px) {
+    display: none;
   }
+}

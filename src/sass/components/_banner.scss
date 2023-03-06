@@ -87,6 +87,14 @@
   background-image: url("../assets/img/smartphone/imagen_categoria_marvel.png");
   background-repeat: no-repeat;
   background-position: right;
+  @media screen and (min-width: 1366px) {
+    width: 100%;
+    height: 320px;
+    background-image: url('../assets/img/desktop/fondo_BannerMarvel.png');
+    background-repeat: no-repeat;
+    background-size: 430px;
+    background-position: right;
+  }
 }
 
 .Banner_dc {
@@ -98,6 +106,15 @@
   background-image: url("../assets/img/smartphone/categoria_dc.png");
   background-repeat: no-repeat;
   background-position: right;
+  @media screen and (min-width: 1366px) {
+    width: 100%;
+    height: 320px;
+    background-image: url('../assets/img/desktop/fondo_BannerDC.png');
+    background-repeat: no-repeat;
+    background-size: 650px;
+    background-position: right;
+    background-color: #171717;
+  }
 }
 
 .Banner_starwars {
@@ -109,13 +126,14 @@
   background-image: url("../assets/img/smartphone/categoria_starwars.png");
   background-repeat: no-repeat;
   background-position: right;
-}
-
-.titulo_starwars {
-  color: #ffca0e;
-  font-family: "font_medio";
-  font-size: 18px;
-  margin-left: 8px;
+  @media screen and (min-width: 1366px) {
+    width: 100%;
+    height: 320px;
+    background-image: url('../assets/img/desktop/fondo_BannerStarwars.png');
+    background-repeat: no-repeat;
+    background-size: 650px;
+    background-position: right;
+  }
 }
 
 .Banner_misFavoritos {
