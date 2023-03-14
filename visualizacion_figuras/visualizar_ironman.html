@@ -9,53 +9,88 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header>
-      <input class="input_header" type="text" />
-    </header>
-    <section class="container">
-      <!-- CARD STAN LEE -->
-        <section class="card_visualizar">
-          <div class="slide">
-            <div class="slide-inner">
-                <input class="slide-open" type="radio" id="slide-1" 
-                      name="slide" aria-hidden="true" hidden="" checked="checked">
-                <div class="slide-item">
-                    <picture class="">
-                        <source
-                          srcset="
-                            ../assets/img/smartphone/IronMan.webp    1x,
-                            ../assets/img/smartphone/IronMan@2x.webp 2x
-                          "
-                        />
-                        <img class="" src="" alt="Ironman" />
-                      </picture>
-                </div>
-                <input class="slide-open" type="radio" id="slide-2" 
-                      name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <picture class="">
-                        <source
-                          srcset="
-                          ../assets/img/smartphone/IronManV2.webp    1x,
-                          ../assets/img/smartphone/IronManV2@2x.webp 2x
-                          "
-                        />
-                        <img class="" src="" alt="IronmanV2" />
-                      </picture>
-                </div>
-                <label for="slide-3" class="slide-control prev control-1">‹</label>
-                <label for="slide-2" class="slide-control next control-1">›</label>
-                <label for="slide-1" class="slide-control prev control-2">‹</label>
-                <ol class="slide-indicador">
-                    <li>
-                        <label for="slide-1" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-2" class="slide-circulo">•</label>
-                    </li>
-                </ol>
+   <header>
+    <!-- LOGO -->
+    <picture>
+      <source srcset="
+      ../assets/img/desktop/logoDesk.webp 1x,
+      ../assets/img/desktop/logoDesk@2x.webp 2x"
+      media="(min-width:320px) and (orientation:portrait)">
+
+      <source srcset="
+      ../assets/img/desktop/logoDesk.webp 1x,
+      ../assets/img/desktop/logoDesk@2x.webp 2x"
+      media="(min-width:1000px)">
+
+      <img src="" alt="logo" class="navbar_logo">
+    </picture>
+
+     <!-- NAVBAR SMARTPHONE-->
+     <nav class="navbar">
+      <a href="index.html" class="enlace_inicio"><img src="../assets/img/svg/icon_home.svg" alt="" /></a>
+      <a href="descubrir.html" class="enlace_descubrir"><img src="../assets/img/svg/icon_discover.svg" alt="" /></a>
+      <a href="mi_lista.html" class="enlace_lista"><img src="../assets/img/svg/icon_list.svg" alt="" /></a>
+       <a href="login.html" class="enlace_login"><img src="../assets/img/svg/icon_user.svg" alt="" /></a>
+    </nav>
+
+    <!-- NAVBAR DESKTOP-->
+    <nav class="navbar_desktop">
+      <ul class="navbar_listado">
+        <li><a href="descubrir.html" class="enlace_descubrir"><b>Descubrir</a></b> </li>
+        <li><a href="proximamente.html" class="enlace_prox"> <b> Proximamente</a></b><li>
+        <li><a href="novedades.html" class="enlaces_novd"><b>Novedades</a></b></li>
+        <li><a href="mi_lista.html" class="enlace_milista"><b>Mi lista</a></b></li>
+        <li><a href="login.html" class="enlace_login"><img src="./assets/img/svg/icon_user.svg" alt="" /></a></li>  
+      </ul>
+    </nav>
+  </header>
+    <!-- SECCION VISUALIZAR FIGURA -->
+  <section class="container">
+    <!-- CARD -->
+      <section class="card_visualizar">
+        <!-- PRIMERA IMAGEN -->
+        <div class="carousel">
+          <button class="carousel-arrow carousel-arrow-left">&#x2190</button>
+          <div class="contenido">
+            <div class="carousel-item">
+              <picture>
+                <source srcset="
+                ../assets/img/smartphone/IronMan.webp 1x,
+                ../assets/img/smartphone/IronMan@2x.webp 2x"
+                media="(min-width:320px) and (orientation:portrait)">
+        
+                <source srcset="
+                ../assets/img/smartphone/IronMan.webp 1x,
+                ../assets/img/smartphone/IronMan@2x.webp 2x"
+                media="(min-width:1000px)">
+        
+                <img src="" alt="figura" width="350px" class="imagen_figura">
+              </picture>
             </div>
+
+            <!-- SEGUNDA IMAGEN -->
+            <div class="carousel-item">
+              <picture>
+                <source srcset="
+                ../assets/img/smartphone/IronManV2.webp 1x,
+                ../assets/img/smartphone/IronManV2@2x.webp 2x"
+                media="(min-width:320px) and (orientation:portrait)">
+        
+                <source srcset="
+                ../assets/img/smartphone/IronManV2.webp 1x,
+                ../assets/img/smartphone/IronManV2@2x.webp 2x"
+                media="(min-width:1000px)">
+        
+                <img src="" alt="figura"  width="400px" class="figura">
+              </picture>
+            </div>
+
+          </div>
+          <button class="carousel-arrow carousel-arrow-right">&#x2192</button>
         </div>
+      </section>
+
+      <section class="info-figure">
         <!-- TITULO DE LA FIGURA -->
           <h3 class="titulo_figura_visualizar">Hot Toys Iron Man 2 Tony Stark Mark V Suit Up Version Deluxe</h4>
         <!-- INFORMACION FIGURA -->
@@ -76,13 +111,6 @@
             </section>
       </section>
       <br>
-        <!-- NAVBAR -->
-      <nav class="navbar">
-        <a href="../index.html"><img src="../assets/img/svg/icon_home.svg" alt="" /></a>  
-        <a href="../descubrir.html"><img src="../assets/img/svg/icon_discover.svg" alt="" /></a>
-        <img src="../assets/img/svg/icon_list.svg" alt="" />
-        <a href="../login.html"><img src="../assets/img/svg/icon_user.svg" alt="" /></a>
-      </nav>
       <!-- Ver Mas -->
       <section class="ver_categoria">
         <p class="ver_categoria__texto">Ver Más</p>
@@ -109,5 +137,8 @@
       </a>
     </section>
   </footer>
+  
+  <!-- JS -->
+  <script src="../js/main.js"></script>
   </body>
 </html>

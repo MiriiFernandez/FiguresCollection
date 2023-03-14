@@ -3,14 +3,14 @@
 /* ********* */
 .Banner_marvel img {
   display: none;
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1000px) {
     display: flex;
   }
 }
 
 .Banner_dc img {
   display: none;
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1000px) {
     display: flex;
     margin-left: 80px;
   }
@@ -18,7 +18,7 @@
 
 .Banner_starwars img {
   display: none;
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1000px) {
     display: flex;
     margin-left: 80px;
   }
@@ -29,7 +29,7 @@
   font-family: "font_medio";
   font-size: 18px;
   margin-left: 8px;
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1000px) {
     display: none;
   }
 }
@@ -38,7 +38,7 @@
   font-family: "font_medio";
   font-size: 18px;
   margin-left: 8px;
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1000px) {
     display: none;
   }
 }
