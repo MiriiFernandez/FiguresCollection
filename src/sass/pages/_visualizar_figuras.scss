@@ -29,9 +29,6 @@
       align-items: center;
     }
 
-    .card_visualizar .figura {
-      width: 100%;
-    }
     .carousel {
       display: flex;
       max-width: 1000px;
@@ -44,7 +41,7 @@
     }
 
     .carousel-item {
-      flex: 1 0 30%;
+      flex: 1 0 33%;
       height: 100px;
       border-radius: 10px;
 
@@ -58,9 +55,7 @@
       }
     }
   }
-  .next_image img {
-    padding: 10px;
-  }
+
   .titulo_figura_visualizar {
     margin-top: 4px;
     padding-top: 8px;
