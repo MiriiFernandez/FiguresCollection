@@ -59,6 +59,9 @@
   .titulo_figura_visualizar {
     margin-top: 4px;
     padding-top: 8px;
+    @media screen and (min-width: 1000px) {
+      font-size: 22px;
+    }
   }
   h3 {
     font-family: "font_regular";
