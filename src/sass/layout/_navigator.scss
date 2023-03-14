@@ -9,15 +9,15 @@
     width: 410px;
     background-color: map-get($colores, fondo_categorias );
 
-    @media screen and (min-width: 1366px) {
+    @media screen and (min-width: 1000px) {
         width: 100%;
     }
 }
 .categorias img{
     margin: 10px;
 
-    @media screen and (min-width: 1366px) {
-       width: 120%;
+    @media screen and (min-width: 1000px) {
+       width: 100%;
     }
 }
 

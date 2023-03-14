@@ -10,7 +10,7 @@
   background-repeat: no-repeat;
   background-position: right;
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1000px) {
     width: 100%;
     height: 400px;
     background-image: url("../assets/img/desktop/ObiWanBannerD.png");
@@ -19,7 +19,7 @@
 }
 
 .banner_secundarios {
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1000px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -32,7 +32,8 @@
   background: map-get($colores_titulos_categorias, fondo_novedades);
   height: map-get($banner_categorias, altura);
   margin-top: map-get($banner_categorias, margen_top);
-  @media screen and (min-width: 1366px) {
+  
+  @media screen and (min-width: 1000px) {
     width: 100%;
     height: 320px;
     background-image: url('../assets/img/desktop/fondo_BannerNovedades.png');
@@ -49,7 +50,8 @@
   background: map-get($colores_titulos_categorias, fondo_descubrir);
   height: map-get($banner_categorias, altura);
   margin-top: map-get($banner_categorias, margen_top);
-  @media screen and (min-width: 1366px) {
+  
+  @media screen and (min-width: 1000px) {
     width: 100%;
     height: 320px;
     background-image: url('../assets/img/desktop/fondo_BannerDescubrir.png');
@@ -66,7 +68,8 @@
   background: map-get($colores_titulos_categorias, fondo_proximamente);
   height: map-get($banner_categorias, altura);
   margin-top: map-get($banner_categorias, margen_top);
-  @media screen and (min-width: 1366px) {
+  
+  @media screen and (min-width: 1000px) {
     width: 100%;
     height: 320px;
     background-image: url('../assets/img/desktop/fondo_BannerProximamente.png');
@@ -87,7 +90,8 @@
   background-image: url("../assets/img/smartphone/imagen_categoria_marvel.png");
   background-repeat: no-repeat;
   background-position: right;
-  @media screen and (min-width: 1366px) {
+  
+  @media screen and (min-width: 1000px) {
     width: 100%;
     height: 320px;
     background-image: url('../assets/img/desktop/fondo_BannerMarvel.png');
@@ -106,7 +110,8 @@
   background-image: url("../assets/img/smartphone/categoria_dc.png");
   background-repeat: no-repeat;
   background-position: right;
-  @media screen and (min-width: 1366px) {
+  
+  @media screen and (min-width: 1000px) {
     width: 100%;
     height: 320px;
     background-image: url('../assets/img/desktop/fondo_BannerDC.png');
@@ -126,7 +131,8 @@
   background-image: url("../assets/img/smartphone/categoria_starwars.png");
   background-repeat: no-repeat;
   background-position: right;
-  @media screen and (min-width: 1366px) {
+  
+  @media screen and (min-width: 1000px) {
     width: 100%;
     height: 320px;
     background-image: url('../assets/img/desktop/fondo_BannerStarwars.png');
@@ -145,7 +151,8 @@
   background-image: url("../assets/img/smartphone/heart.png");
   background-repeat: no-repeat;
   background-position: right;
-  @media screen and (min-width: 1366px) {
+  
+  @media screen and (min-width: 1000px) {
     width: 100%;
     height: 200px;
     background-image: url('../assets/img/desktop/fondo_BannerFav.png');
@@ -164,7 +171,8 @@
   background-image: url("../assets/img/smartphone/crown.png");
   background-repeat: no-repeat;
   background-position: right;
-  @media screen and (min-width: 1366px) {
+  
+  @media screen and (min-width: 1000px) {
     width: 100%;
     height: 200px;
     background-image: url('../assets/img/desktop/fondo_BannerColecc.png');

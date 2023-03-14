@@ -9,12 +9,11 @@
   justify-content: space-evenly;
   position: fixed;
   width: 100%;
-
+  top: 50%;
   background-color: map-get($colores, theme);
 
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1000px) {
     display: none;
-    
   }
 }
 
@@ -26,7 +25,38 @@
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  
+}
+
+@media screen and (min-width: 1000px) {
+  .navbar img {
+    display: none;
+  }
+}
+
+.navbar_desktop {
+  display: none;
+
+  @media screen and (min-width: 1000px) {
+    display: flex;
+    padding-top: 12px;
+
+    .navbar_listado {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 100px;
+      padding: 10px;
+    }
+
+    .navbar_listado,
+    li {
+      margin: 10px;
+    }
+
+    .navbar_listado .enlace_login {
+      margin-left: 500px;
+    }
+  }
 }
 
 .navbar_registro {

@@ -368,7 +368,7 @@ header {
   height: 40px;
   margin: 50px 40px 40px 40px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .btn {
     width: 251px;
     height: 61px;
@@ -386,7 +386,7 @@ header {
   background-repeat: no-repeat;
   background-position: right;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .banner {
     width: 100%;
     height: 400px;
@@ -395,7 +395,7 @@ header {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .banner_secundarios {
     display: -ms-grid;
     display: grid;
@@ -416,7 +416,7 @@ header {
   height: 65px;
   margin-top: 10px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .Banner_novedades {
     width: 100%;
     height: 320px;
@@ -439,7 +439,7 @@ header {
   height: 65px;
   margin-top: 10px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .Banner_descubrir {
     width: 100%;
     height: 320px;
@@ -462,7 +462,7 @@ header {
   height: 65px;
   margin-top: 10px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .Banner_proximamente {
     width: 100%;
     height: 320px;
@@ -489,7 +489,7 @@ header {
   background-repeat: no-repeat;
   background-position: right;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .Banner_marvel {
     width: 100%;
     height: 320px;
@@ -514,7 +514,7 @@ header {
   background-repeat: no-repeat;
   background-position: right;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .Banner_dc {
     width: 100%;
     height: 320px;
@@ -540,7 +540,7 @@ header {
   background-repeat: no-repeat;
   background-position: right;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .Banner_starwars {
     width: 100%;
     height: 320px;
@@ -565,7 +565,7 @@ header {
   background-repeat: no-repeat;
   background-position: right;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .Banner_misFavoritos {
     width: 100%;
     height: 200px;
@@ -590,7 +590,7 @@ header {
   background-repeat: no-repeat;
   background-position: right;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .Banner_miColeccion {
     width: 100%;
     height: 200px;
@@ -616,9 +616,10 @@ header {
           justify-content: space-evenly;
   position: fixed;
   width: 100%;
+  top: 50%;
   background-color: #F26B1D;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .navbar {
     display: none;
   }
@@ -632,6 +633,43 @@ header {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+@media screen and (min-width: 1000px) {
+  .navbar img {
+    display: none;
+  }
+}
+.navbar_desktop {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .navbar_desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 12px;
+  }
+  .navbar_desktop .navbar_listado {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 100px;
+    padding: 10px;
+  }
+  .navbar_desktop .navbar_listado,
+.navbar_desktop li {
+    margin: 10px;
+  }
+  .navbar_desktop .navbar_listado .enlace_login {
+    margin-left: 500px;
+  }
 }
 
 .navbar_registro {
@@ -704,128 +742,18 @@ body {
 }
 
 /* ********* */
-/* @CARROUSEL */
-/* ********* */
-.slide {
-  position: relative;
-  margin-top: 26px;
-}
-
-.slide-inner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: calc(300px + 3em);
-}
-
-.slide-open:checked + .slide-item {
-  position: static;
-  opacity: 100;
-}
-
-.slide-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: absolute;
-  opacity: 0;
-  -webkit-transition: opacity 0.6s ease-out;
-  transition: opacity 0.6s ease-out;
-}
-
-.slide-item img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-
-.slide-control {
-  background: rgba(0, 0, 0, 0.28);
-  border-radius: 50%;
-  color: #fff;
-  cursor: pointer;
-  display: none;
-  font-size: 40px;
-  height: 40px;
-  line-height: 35px;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  cursor: pointer;
-  transform: translate(0, -50%);
-  text-align: center;
-  width: 40px;
-  z-index: 10;
-}
-
-.slide-control.prev {
-  left: 2%;
-}
-
-.slide-control.next {
-  right: 2%;
-}
-
-.slide-control:hover {
-  background: rgba(0, 0, 0, 0.8);
-  color: #aaaaaa;
-}
-
-#slide-1:checked ~ .control-1,
-#slide-2:checked ~ .control-2,
-#slide-3:checked ~ .control-3 {
-  display: block;
-}
-
-.slide-indicador {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 2%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10;
-}
-
-.slide-indicador li {
-  display: inline-block;
-  margin: 0 5px;
-}
-
-.slide-circulo {
-  color: #828282;
-  cursor: pointer;
-  display: block;
-  font-size: 35px;
-}
-
-.slide-circulo:hover {
-  color: #aaaaaa;
-}
-
-#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
-#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
-#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo {
-  color: #428bca;
-}
-
-/* ********* */
 /* @HEADER */
 /* ********* */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("../assets/img/smartphone/logofc.png");
-  background-color: #F26B1D;
-  background-size: 90px;
-  background-repeat: no-repeat;
-  height: 80px;
+  height: 100%;
+}
+@media screen and (min-width: 1000px) {
+  header {
+    height: 100%;
+  }
 }
 header .input_header {
   background: url("../assets/img/smartphone/lupa.png");
@@ -858,7 +786,7 @@ header .logo_header img {
   width: 410px;
   background-color: #CEC9C9;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .categorias {
     width: 100%;
   }
@@ -867,9 +795,9 @@ header .logo_header img {
 .categorias img {
   margin: 10px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .categorias img {
-    width: 120%;
+    width: 100%;
   }
 }
 
@@ -883,7 +811,7 @@ footer {
   width: 100vw;
   background-color: #F26B1D;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   footer {
     display: -ms-grid;
     display: grid;
@@ -907,7 +835,7 @@ li {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .info {
     -ms-grid-column: 3;
     grid-column: 3/3;
@@ -920,7 +848,7 @@ li {
 .rdds {
   display: none;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .rdds {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -956,7 +884,7 @@ a {
   display: flex;
   margin-top: 20px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .contacto {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -980,7 +908,7 @@ a {
   font-family: "font_ligero";
   margin-left: 7px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .contacto img {
     margin-top: 20px;
     width: 50px;
@@ -999,16 +927,11 @@ a {
 a {
   font-family: "font_ligero";
 }
-@media screen and (min-width: 1366px) {
-  a {
-    font-size: 22px;
-  }
-}
 
 .contenido_banner {
   display: none;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .contenido_banner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1042,7 +965,7 @@ a {
   background-position: right;
   background-size: contain;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .descubrir {
     width: 100%;
     height: 400px;
@@ -1057,7 +980,7 @@ a {
   background-repeat: no-repeat;
   background-position: right;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .proximamente {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1159,14 +1082,26 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+}
+.container_registro .registro_form .registro_formulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .container_registro .registro_form input {
   border-radius: 19px;
@@ -1230,7 +1165,7 @@ a {
   font-size: 18px;
   margin-left: 8px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .titulo_novedades {
     color: white;
     margin-left: 30px;
@@ -1253,7 +1188,7 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .card_figuras {
     display: -ms-grid;
     display: grid;
@@ -1330,6 +1265,9 @@ a {
 /* @VISUALIZAR_FIGRUAS */
 /* ********* */
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1344,6 +1282,14 @@ a {
           align-items: center;
   padding: 10px;
 }
+@media screen and (min-width: 1000px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .container .card_visualizar {
   padding-top: 8px;
   width: 320px;
@@ -1353,6 +1299,58 @@ a {
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.33);
   border-radius: 8px;
   margin-top: 20px;
+}
+@media screen and (min-width: 1000px) {
+  .container .card_visualizar {
+    width: 535px;
+    height: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.container .card_visualizar .card_visualizar .figura {
+  width: 100%;
+}
+.container .card_visualizar .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+}
+.container .card_visualizar .contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  overflow: hidden;
+}
+.container .card_visualizar .carousel-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  height: 100px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .container .card_visualizar .carousel-item {
+    height: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
 }
 .container .next_image img {
   padding: 10px;

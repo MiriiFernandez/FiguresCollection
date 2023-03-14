@@ -3,11 +3,19 @@
 /* ********* */
 .container_registro {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  @media screen and (min-width: 1000px) {
+    
+  }
 
   .registro_form {
+    .registro_formulario{
+      display: flex;
+      flex-direction: column;
+    }
     input {
       border-radius: 19px;
       height: 35px;
