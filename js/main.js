@@ -1,3 +1,4 @@
+// CAROUSEL DE VISUALIZAR FIGURAS
 const carouselItems = document.querySelectorAll(".carousel-item");
 //se convierte en una array
 
@@ -19,3 +20,5 @@ flechaIzquierda.addEventListener("click", () => {
     carouselItems[i].style.transform = "translateX(0%)";
   }
 });
+
+
