@@ -29,8 +29,8 @@
       <form id="formulario" method="POST" class="registro_formulario">
         <input type="text" placeholder="Nombre" name="nombre" id="nombre" />
         <input type="email" placeholder="Email" name="email" id="email" />
-        <input type="password" placeholder="Contraseña" name="contrasena" id="contrasena" />
-        <input type="password" placeholder="Repetir Contraseña" name="repeticion_contrasena" id="repeticion_contrasena" />
+        <input type="password" placeholder="Contraseña" name="password" id="password" />
+        <input type="password" placeholder="Repetir Contraseña" name="password_repeat" id="password_repeat" />
         <!-- BTN -->
         <input class="registro_btn" type="submit" value="Enviar" name="enviar">
       </form>
@@ -44,13 +44,8 @@
   </section>
 
   <!-- JS -->
-  <!-- <script src="./js/prueba.js"></script> -->
-  <?php
-  require './Controlador/ControladorRegistro.php';
-  $ctrRegistro = new ControladorRegistro();
-  $ctrRegistro->registrarse();
+  <script src="./js/prueba.js"></script>
 
-  ?>
 </body>
 
 </html>
