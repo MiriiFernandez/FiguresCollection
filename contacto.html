@@ -8,6 +8,42 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
+    <header>
+      <!-- LOGO -->
+      <picture>
+        <source srcset="
+        ../assets/img/desktop/logoDesk.webp 1x,
+        ../assets/img/desktop/logoDesk@2x.webp 2x"
+        media="(min-width:320px) and (orientation:portrait)">
+
+        <source srcset="
+        ../assets/img/desktop/logoDesk.webp 1x,
+        ../assets/img/desktop/logoDesk@2x.webp 2x"
+        media="(min-width:1000px)">
+
+        <img src="" alt="logo" class="navbar_logo">
+      </picture>
+
+      <!-- NAVBAR SMARTPHONE-->
+      <nav class="navbar">
+        <a href="index.html" class="enlace_inicio"><img src="./assets/img/svg/icon_home.svg" alt="" /></a>
+        <a href="descubrir.html" class="enlace_descubrir"><img src="./assets/img/svg/icon_discover.svg" alt="" /></a>
+        <a href="mi_lista.html" class="enlace_lista"><img src="./assets/img/svg/icon_list.svg" alt="" /></a>
+         <a href="login.php" class="enlace_login"><img src="./assets/img/svg/icon_user.svg" alt="" /></a>
+      </nav>
+
+      <!-- NAVBAR DESKTOP-->
+      <nav class="navbar_desktop">
+        <ul class="navbar_listado">
+          <li><a href="descubrir.html" class="enlace_descubrir"><b>Descubrir</a></b> </li>
+          <li><a href="proximamente.html" class="enlace_prox"> <b> Proximamente</a></b><li>
+          <li><a href="novedades.html" class="enlaces_novd"><b>Novedades</a></b></li>
+          <li><a href="mi_lista.html" class="enlace_milista"><b>Mi lista</a></b></li>
+          <li><a href="login.php" class="enlace_login"><img src="./assets/img/svg/icon_user.svg" alt="" /></a></li>  
+        </ul>
+      </nav>
+
+    </header> 
     <section class="container_contacto">
       <!-- LOGO -->
       <section class="logo_contacto">
@@ -23,8 +59,8 @@
       </section>
       <h4 class="contactanos">CONTACTANOS!</h4>
       <!-- FORMULARIO -->
-      <section class="contact_form">
-        <form action="">
+      <section >
+        <form action="" class="container_formulario">
           <input type="text" placeholder="Nombre" name="nombre" id="" />
           <input type="email" placeholder="Email" name="email" id="" />
           <input class="mensaje_input" type="text" placeholder="Mensaje" name="mensaje" />
@@ -32,20 +68,26 @@
         <!-- BTN -->
         <button class="contact_btn"><a href="" class="contact_btn_texto">Enviar!</a></button>
       </section>
-      <!-- NAVBAR -->
-      <nav class="navbar">
-        <a href="index.html"
-          ><img src="./assets/img/svg/icon_home.svg" alt=""
-        /></a>
-        <a href="descubrir.html"
-          ><img src="./assets/img/svg/icon_discover.svg" alt=""
-        /></a>
-        <a href="mi_lista.html"></a>
-        <img src="./assets/img/svg/icon_list.svg" alt="" />
-        <a href="login.html"
-          ><img src="./assets/img/svg/icon_user.svg" alt=""
-        /></a>
-      </nav>
     </section>
+    <!-- FOOTER -->
+    <footer>
+      <!-- Terminos y Copy -->
+      <section class="terminos">
+      <ul>
+        <b>
+        <li><a href="">Política y Privacidad</a></li>
+        <li><a href="">Terminos y Condiciones</a></li>
+        <li class="copy">Copyright © 2023 derechos reservados a CF</li>
+      </ul>
+    </b>
+  </section>
+      <!-- contacto -->
+      <section class="contacto">
+        <b> <a href="contacto.html"
+          >Contáctanos!</b>
+          <img src="assets/img/svg/icon_mssg.svg" alt="" />
+        </a>
+      </section>
+    </footer>
   </body>
 </html>

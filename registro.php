@@ -39,7 +39,7 @@
     </section>
     <!-- Registro -->
     <b>
-      <a class="link_tologin" href="login.html">¡Ya tengo cuenta!</a>
+      <a class="link_tologin" href="login.php">¡Ya tengo cuenta!</a>
     </b>
   </section>
 
