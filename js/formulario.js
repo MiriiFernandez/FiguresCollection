@@ -33,6 +33,7 @@ function formulario() {
   }
 
   mostrarMensaje();
+
 }
 
 //Mostrar mensaje de validación
@@ -87,7 +88,7 @@ function validarEmail() {
 
 //Validar Contraseña
 function validarContraseña() {
-  var inputPasswd = document.getElementById("contraseña");
+  var inputPasswd = document.getElementById("contrasena");
   var passwd = inputPasswd.value;
 
   //Passwd no puede estar vacio
@@ -122,3 +123,4 @@ function validarRepeticionContraseña() {
 
   return reppasswdEstado;
 }
+

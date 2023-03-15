@@ -1,35 +1,3 @@
-<?php
-include './php/conexion.php';
-
-$pdo = new Conexion();
-
-// $nombre = $_POST["nombre"];
-// $email = $_POST["email"];
-// $contraseña = $_POST["contraseña"];
-
-if (isset($_POST['enviar'])) {
-
-  $password_encrypted = hash('sha256', $_POST["contraseña"]);
-  $_POST["contraseña"] = $password_encrypted;
-
-  $sql = "INSERT INTO registros (nombre, email, contraseña) VALUES (:nombre, :email, :contraseña)";
-  $stmt = $pdo->prepare($sql);
-  $stmt->bindValue(':nombre', $_POST["nombre"]);
-  $stmt->bindValue(':email', $_POST["email"]);
-  $stmt->bindValue(':contraseña', $_POST["contraseña"]);
-  $stmt->execute();
-  $idPost = $pdo->lastInsertId();
-  if ($idPost) {
-    header("HTTP/1.1 200 Ok");
-    exit;
-  }
-} else {
-  echo "error al registrarse";
-}
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,6 +7,7 @@ if (isset($_POST['enviar'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registro</title>
   <link rel="stylesheet" href="css/main.css" />
+
 </head>
 
 <body>
@@ -56,15 +25,17 @@ if (isset($_POST['enviar'])) {
     <h4 class="titulo_crearcuenta">CREAR UNA CUENTA</h4>
     <!-- FORMULARIO -->
     <section class="registro_form">
-      <form action="" class="registro_formulario">
+
+      <form id="formulario" method="POST" class="registro_formulario">
         <input type="text" placeholder="Nombre" name="nombre" id="nombre" />
         <input type="email" placeholder="Email" name="email" id="email" />
-        <input type="password" placeholder="Contraseña" name="contraseña" id="contraseña" />
-        <input type="password" placeholder="Repetir Contraseña" name="repeticion_contraseña" id="repeticion_contraseña" />
+        <input type="password" placeholder="Contraseña" name="contrasena" id="contrasena" />
+        <input type="password" placeholder="Repetir Contraseña" name="repeticion_contrasena" id="repeticion_contrasena" />
         <!-- BTN -->
-        <button class="registro_btn" type="submit" name="enviar" onclick="formulario()"><a href="#">Registrarte</a></button>
+        <input class="registro_btn" type="submit" value="Enviar" name="enviar">
       </form>
-      <p id="mensaje"></p>
+
+      <div id="mensaje"></div>
     </section>
     <!-- Registro -->
     <b>
@@ -73,7 +44,13 @@ if (isset($_POST['enviar'])) {
   </section>
 
   <!-- JS -->
-  <script src="./js/formulario.js"></script>
+  <!-- <script src="./js/prueba.js"></script> -->
+  <?php
+  require './Controlador/ControladorRegistro.php';
+  $ctrRegistro = new ControladorRegistro();
+  $ctrRegistro->registrarse();
+
+  ?>
 </body>
 
 </html>

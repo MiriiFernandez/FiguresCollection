@@ -25,8 +25,8 @@
       <!-- FORMULARIO -->
       <section class="login_form">
         <form action="">
-          <input type="email" placeholder="Email" name="email" id="" />
-          <input type="password" placeholder="Contraseña" name="password" />
+          <input type="email" placeholder="Email" name="email" id="email" />
+          <input type="password" placeholder="Contraseña" name="contrasena" id="contrasena" />
         </form>
         <!-- BTN -->
         <button class="login_btn"><a href="">Iniciar Sesión</a></button>

@@ -845,6 +845,12 @@ li {
 .terminos {
   font-size: 10px;
 }
+@media screen and (min-width: 1000px) {
+  .terminos {
+    margin-left: 100px;
+  }
+}
+
 .rdds {
   display: none;
 }
