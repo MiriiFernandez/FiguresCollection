@@ -46,6 +46,13 @@
   <!-- JS -->
   <script src="./js/prueba.js"></script>
 
+  <?php
+  // include 'ControladorRegistro.php';
+  // $ctrRegistro = new ControladorRegistro();
+  // $ctrRegistro->registrarse();
+
+
+  ?>
 </body>
 
 </html>

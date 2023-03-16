@@ -1,10 +1,5 @@
 <?php
 
-// Crear una instancia de PDO y establecer la conexión con la base de datos
-include 'conexion.php';
-
-$pdo = new Conexion();
-
 // Recoger los valores de fetch
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
@@ -46,6 +41,9 @@ if (!empty($mensajes)) {
     // echo json_encode($response);
     echo json_encode(false);
     exit;
+} else {
+    echo json_encode('Usuario listo para ingresar');
+    exit;
 }
 
 // Devolver la respuesta con los datos codificados en JSON
@@ -54,20 +52,15 @@ $response = array(
     'data' => $data
 );
 
-echo json_encode(false);
+//3) GUARDAR DATOS
+$datos_bd = []; //enviamos esto a bd.
 
+$usuario = new UsuarioModelo();
+$estado = $usuario->insert($datos_bd); //estado
+//4) RETURN RESPONSE
+if ($estado) {
 
-// // Crear una sentencia SQL para insertar los datos del formulario en la base de datos
-// $sql = "INSERT INTO usuarios (nombre, email, password) VALUES (:nombre, :email, :password)";
-
-// // Preparar la sentencia
-// $stmt = $pdo->prepare($sql);
-
-// // Asignar valores a los marcadores de posición y ejecutar la sentencia
-// $stmt->execute(array(
-//     ':nombre' => $nombre,
-//     ':email' => $email,
-//     ':password' => password_hash($password, PASSWORD_DEFAULT)
-// ));
-
-// echo "Usuario registrado correctamente";
+    echo "Todo ok";
+} else {
+    echo "Todo mal :(";
+}

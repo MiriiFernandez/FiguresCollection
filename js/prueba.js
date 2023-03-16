@@ -10,11 +10,11 @@ document.getElementById("formulario").addEventListener("submit", function (e) {
     .then((res) => res.json())
     .then((data) => {
       if (data == "true") {
-        document.getElementById("nombre").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("password").value = "";
-        document.getElementById("password_repeat").value = "";
-        alert("El usuario se insertó correctamente.");
+        // document.getElementById("nombre").value = "";
+        // document.getElementById("email").value = "";
+        // document.getElementById("password").value = "";
+        // document.getElementById("password_repeat").value = "";
+        mostrarInfo(data);
       } else {
         mostrarInfo(data);
       }
@@ -23,7 +23,7 @@ document.getElementById("formulario").addEventListener("submit", function (e) {
 
 function mostrarInfo(data) {
   if (data) {
-    console.log("Imprimiendo informacion");
+    imprimirError("¡Usuario registrado correctamente!");
   } else {
     imprimirError("Ups parece que hubo un error, revise los campos");
   }
@@ -32,7 +32,6 @@ function mostrarInfo(data) {
 function imprimirError(error) {
   let parrafo = document.getElementById("mensaje");
   if (error === "") {
-    parrafo.innerHTML = "registro con exito";
     parrafo.style.color = "green";
     parrafo.style.textTransform = "uppercase";
   } else {
