@@ -10,10 +10,10 @@ document.getElementById("formulario").addEventListener("submit", function (e) {
     .then((res) => res.json())
     .then((data) => {
       if (data == "true") {
-        // document.getElementById("nombre").value = "";
-        // document.getElementById("email").value = "";
-        // document.getElementById("password").value = "";
-        // document.getElementById("password_repeat").value = "";
+         document.getElementById("nombre").value = "";
+         document.getElementById("email").value = "";
+         document.getElementById("password").value = "";
+         document.getElementById("password_repeat").value = "";
         mostrarInfo(data);
       } else {
         mostrarInfo(data);

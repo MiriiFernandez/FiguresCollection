@@ -1,4 +1,7 @@
 <?php
+include 'conexion.php';
+
+$pdo = new Conexion();
 
 // Recoger los valores de fetch
 $nombre = $_POST['nombre'];
@@ -42,7 +45,22 @@ if (!empty($mensajes)) {
     echo json_encode(false);
     exit;
 } else {
-    echo json_encode('Usuario listo para ingresar');
+
+    //Insertar registro
+    if ($pdo) {
+        $sql = "INSERT INTO usuarios (nombre, email, password) VALUES(:nombre, :email, :password)";
+        $stmt = $pdo->prepare($sql);
+        $stmt->bindValue(':nombre', $_POST['nombre']);
+        $stmt->bindValue(':email', $_POST['email']);
+        $stmt->bindValue(':password', $_POST['password']);
+        $stmt->execute();
+        $idPost = $pdo->lastInsertId();
+        if ($idPost) {
+            header("HTTP/1.1 200 Ok");
+            echo json_encode($idPost);
+            exit;
+        }
+    }
     exit;
 }
 
@@ -53,14 +71,14 @@ $response = array(
 );
 
 //3) GUARDAR DATOS
-$datos_bd = []; //enviamos esto a bd.
+// $datos_bd = []; //enviamos esto a bd.
 
-$usuario = new UsuarioModelo();
-$estado = $usuario->insert($datos_bd); //estado
-//4) RETURN RESPONSE
-if ($estado) {
+// $usuario = new UsuarioModelo();
+// $estado = $usuario->insert($datos_bd); //estado
+// //4) RETURN RESPONSE
+// if ($estado) {
 
-    echo "Todo ok";
-} else {
-    echo "Todo mal :(";
-}
+//     echo "Todo ok";
+// } else {
+//     echo "Todo mal :(";
+// }

@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registro</title>
   <link rel="stylesheet" href="css/main.css" />
-
 </head>
 
 <body>
@@ -47,9 +46,9 @@
   <script src="./js/prueba.js"></script>
 
   <?php
-  // include 'ControladorRegistro.php';
-  // $ctrRegistro = new ControladorRegistro();
-  // $ctrRegistro->registrarse();
+    // include_once 'ControladorRegistro.php';
+    // $ctrRegistro = new ControladorRegistro();
+    // $ctrRegistro->registrarse();
 
 
   ?>
