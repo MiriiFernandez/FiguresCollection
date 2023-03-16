@@ -56,7 +56,7 @@ if (!empty($mensajes)) {
         $stmt->execute();
         $idPost = $pdo->lastInsertId();
         if ($idPost) {
-            header("HTTP/1.1 200 Ok");
+            header("login.php");
             echo json_encode($idPost);
             exit;
         }

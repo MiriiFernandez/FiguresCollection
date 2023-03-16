@@ -24,12 +24,12 @@
       <h4 class="iniciaSesion">INICIA SESIÓN</h4>
       <!-- FORMULARIO -->
       <section class="login_form">
-        <form action="">
+        <form action="ControladorLogin.php" method="POST">
           <input type="email" placeholder="Email" name="email" id="email" />
-          <input type="password" placeholder="Contraseña" name="contrasena" id="contrasena" />
+          <input type="password" placeholder="Contraseña" name="password" id="password" />
+          <!-- BTN -->
+          <input type="submit" class="login_btn" value="Iniciar Sesion"><a href="index.php"></a></input>
         </form>
-        <!-- BTN -->
-        <button class="login_btn"><a href="">Iniciar Sesión</a></button>
       </section>
       <!-- Registro -->
       <section class="registrarse">
