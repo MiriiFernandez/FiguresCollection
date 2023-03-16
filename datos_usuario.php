@@ -46,34 +46,47 @@
       </ul>
     </nav>
   </header>
-<section class="cuerpo_datos">
-  <section class="contianer_datos">
-    <!-- <?php
-  session_start();
-  $emailUsuario = $_SESSION['email'];
-  echo "<p>$emailUsuario</p>";
+  <section class="cuerpo_datos">
+    <section class="contianer_datos">
 
-  include 'conexion.php';
-  $pdo = new Conexion();
+      <?php
+      session_start();
+      $emailUsuario = $_SESSION['email'];
+      // echo "<p>$emailUsuario</p>";
 
-  $sql = $pdo->prepare("SELECT * FROM usuarios");
-  $sql->execute();
-  $sql->setFetchMode(PDO::FETCH_ASSOC);
-  header("HTTP/1.1 200 hay datos");
+      include 'conexion.php';
+      $pdo = new Conexion();
+      if (isset($_SESSION['email'])) {
+        $sql = $pdo->prepare("SELECT * FROM usuarios WHERE email=:email");
+        $sql->bindValue(':email', $_SESSION['email']);
+        $sql->execute();
+        $sql->setFetchMode(PDO::FETCH_ASSOC);
+        header("HTTP/1.1 200 hay datos");
 
-  $resultado = $sql->fetchAll();
+        $resultado = $sql->fetchAll();
+      }
 
+      echo "<table>";
+      // Mostrar resultados
+      echo "<tr><th>Nombre</th><th>Correo</th><th>Contraseña</th></tr>";
+      foreach ($resultado as $row) {
+        echo "<tr>";
+        echo "<td>" . $row["nombre"] . "</td>";
+        echo "<td>" . $row["email"] . "</td>";
+        echo "<td>" . $row["password"] . "</td>";
 
-  // Mostrar resultados
-  foreach ($resultado as $row) {
-    echo "- <b>" . " " . $row["nombre"] . " " . $row["email"] . " " . $row["password"] . "</b><br>";
-  }
+        echo "</tr>";
+      }
 
-  ?> -->
+      echo "</table>";
+      ?>
+    </section>
+    <section class="botones_datos">
+      <button class="modificar_boton"><a href="cambiar_password.php">Cambiar Contraseña</a></button>
+      <button class="modificar_boton"><a href="cambiar_email.php">Cambiar Correo</a></button>
+      </form>
+    </section>
   </section>
-</section>
-  
-  
 
 </body>
 
