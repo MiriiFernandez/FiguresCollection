@@ -50,12 +50,9 @@
     <section class="contianer_datos">
 
       <?php
-      session_start();
-      $emailUsuario = $_SESSION['email'];
-      // echo "<p>$emailUsuario</p>";
-
       include 'conexion.php';
       $pdo = new Conexion();
+      session_start();
       if (isset($_SESSION['email'])) {
         $sql = $pdo->prepare("SELECT * FROM usuarios WHERE email=:email");
         $sql->bindValue(':email', $_SESSION['email']);
@@ -64,28 +61,36 @@
         header("HTTP/1.1 200 hay datos");
 
         $resultado = $sql->fetchAll();
+
+        try {
+          echo "<table>";
+          // Mostrar resultados
+          echo "<tr><th>Nombre</th><th>Correo</th><th>Contraseña</th></tr>";
+          foreach ($resultado as $row) {
+            echo "<tr>";
+            echo "<td>" . $row["nombre"] . "</td>";
+            echo "<td>" . $row["email"] . "</td>";
+            echo "<td>" . $row["password"] . "</td>";
+
+            echo "</tr>";
+          }
+
+          echo "</table>";
+        } catch (PDOException $error) {
+          echo "Error: " . $error->getMessage();
+        }
+      } else {
+        echo "Necesitas inicar sesión";
       }
 
-      echo "<table>";
-      // Mostrar resultados
-      echo "<tr><th>Nombre</th><th>Correo</th><th>Contraseña</th></tr>";
-      foreach ($resultado as $row) {
-        echo "<tr>";
-        echo "<td>" . $row["nombre"] . "</td>";
-        echo "<td>" . $row["email"] . "</td>";
-        echo "<td>" . $row["password"] . "</td>";
 
-        echo "</tr>";
-      }
-
-      echo "</table>";
       ?>
     </section>
     <section class="botones_datos">
       <button class="modificar_boton"><a href="cambiar_password.php">Cambiar Contraseña</a></button>
       <button class="modificar_boton"><a href="cambiar_email.php">Cambiar Correo</a></button>
-      </form>
     </section>
+    <a href="cerrar_sesion.php">Cerrar Sesión</a>
   </section>
 
 </body>

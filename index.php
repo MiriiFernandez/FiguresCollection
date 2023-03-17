@@ -44,9 +44,11 @@
         <li><a href="login.php" class="enlace_login"><img src="./assets/img/svg/icon_user.svg" alt="" /></a></li>
         <?php
         session_start();
-        $emailUsuario = $_SESSION['email'];
-        echo "<p>$emailUsuario</p>";
-
+        if (isset($_SESSION['email'])) {
+          $emailUsuario = $_SESSION['email'];
+          echo "<p>$emailUsuario</p>";
+        }
+        
         ?>
         <li><a href="datos_usuario.php" class=""><img src="assets/img/svg/icon_gear.svg" width="50px" alt="" /></a></li>
       </ul>
