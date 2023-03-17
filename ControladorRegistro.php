@@ -70,15 +70,3 @@ $response = array(
     'data' => $data
 );
 
-//3) GUARDAR DATOS
-// $datos_bd = []; //enviamos esto a bd.
-
-// $usuario = new UsuarioModelo();
-// $estado = $usuario->insert($datos_bd); //estado
-// //4) RETURN RESPONSE
-// if ($estado) {
-
-//     echo "Todo ok";
-// } else {
-//     echo "Todo mal :(";
-// }

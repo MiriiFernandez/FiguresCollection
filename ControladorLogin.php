@@ -21,30 +21,13 @@ if (!isset($_POST['submit'])) {
     // Ejecutar la consulta
     $sql->execute();
 
-    
-    // $consulta = $pdo->prepare('SELECT nombre FROM usuarios WHERE email = :email AND password = :password;
-    // ');
-
-    // $consulta->bindValue(':email', $email);
-    // $consulta->bindValue(':password', $password);
-    // $consulta->bindValue(':nombre', 'nombre');
-    // $consulta->execute();
-    // $consulta->setFetchMode(PDO::FETCH_ASSOC);
-
-    // if ($consulta) {
-    //     $_SESSION["nombre"] = $nombre;
-
-    //     echo '<script>alert (" Bienvenid@! ' . $nombre . '");</script>';
-    // }
-
-    // Comprobar si hay resultados
-
     if ($sql->rowCount() > 0) {
         $_SESSION["email"] = $email;
 
         echo '<script>alert (" Bienvenid@! ' . $email . '");</script>';
         header('Location: index.php');
     } else {
-        echo "Lo siento! el usuario no se ha encontrado!";
+        $cod_error = 10;
+        header("Location: error.php?cod_error=" . $cod_error);
     }
 }
