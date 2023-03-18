@@ -8,6 +8,7 @@ $pdo = new Conexion();
 $email = $_POST['email'];
 $password  = $_POST['password'];
 
+//Comenzaremos una sesión nueva
 session_start();
 if (!isset($_POST['submit'])) {
 
@@ -22,12 +23,14 @@ if (!isset($_POST['submit'])) {
     $sql->execute();
 
     if ($sql->rowCount() > 0) {
+        //Guardaremos una sesión con el email
         $_SESSION["email"] = $email;
-
-        echo '<script>alert (" Bienvenid@! ' . $email . '");</script>';
+        //Será reedireccionado a la pàgina de index
         header('Location: index.php');
     } else {
+        //Instanciaremos una variable con un número de error
         $cod_error = 10;
+        //Será reedireccionado a la pàgina de errores
         header("Location: error.php?cod_error=" . $cod_error);
     }
 }

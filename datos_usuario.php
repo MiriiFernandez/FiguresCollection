@@ -80,7 +80,7 @@
           echo "Error: " . $error->getMessage();
         }
       } else {
-        echo "Necesitas inicar sesión";
+        echo "<b>Necesitas inicar sesión</b>";
       }
 
 

@@ -25,7 +25,7 @@ function mostrarInfo(data) {
   if (data) {
     imprimirError("¡Usuario registrado correctamente!");
   } else {
-    imprimirError("Ups parece que hubo un error, revise los campos");
+    imprimirError("¡Ups! Parece que hubo un error, revise los campos o puede ser que ya estes registrado!");
   }
 }
 

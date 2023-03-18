@@ -45,7 +45,7 @@
         </nav>
       </header>
       <h3 class="titulo_datos">Actualizar Datos</h3>
-      <form action="actualizar_datos.php" method="POST" class="form_datosNuevos">
+      <form action="actualizar_password.php" method="POST" class="form_datosNuevos">
         <label for="" class="parrafo_datos">Insertar nueva contraseña</label>
         <input type="text" name="cambiar_password" class="campo_password">
         <input type="submit" name="enviar_nuevaPassword" class="modificar_boton" value="Actualizar Contraseña">

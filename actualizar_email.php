@@ -19,7 +19,9 @@ if (isset($_POST['enviar_nuevoCorreo'])) {
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($result['count'] > 0) {
-        echo "¡El nuevo email ya existe!";
+        $cod_error = 70;
+        //Será reedireccionado a la pàgina de errores
+        header("Location: error.php?cod_error=" . $cod_error);
     } else {
         // Consulta para actualizar el email si el email de la sesión es igual al email en la tabla
         $sql = "UPDATE usuarios SET email=:nuevo_correo WHERE email=:email_sesion";
@@ -32,9 +34,13 @@ if (isset($_POST['enviar_nuevoCorreo'])) {
 
         // Comprobar si la actualización se realizó correctamente
         if ($stmt->rowCount() > 0) {
-            echo "Se actualizó el correo electrónico correctamente";
+            $cod_ok = 2;
+            //Será reedireccionado a la pàgina de todo ok
+            header("Location: control_ok.php?cod_ok=" . $cod_ok);
         } else {
-            echo "No se pudo actualizar el correo electrónico";
+            $cod_error = 60;
+            //Será reedireccionado a la pàgina de errores
+            header("Location: error.php?cod_error=" . $cod_error);
         }
     }
 }

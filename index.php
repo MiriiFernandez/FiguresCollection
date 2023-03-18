@@ -18,8 +18,8 @@
         ../assets/img/desktop/logoDesk@2x.webp 2x" media="(min-width:320px) and (orientation:portrait)">
 
       <source srcset="
-        ../assets/img/desktop/logoDesk.webp 1x,
-        ../assets/img/desktop/logoDesk@2x.webp 2x" media="(min-width:1000px)">
+        assets/img/desktop/logoDesk.webp 1x,
+        assets/img/desktop/logoDesk@2x.webp 2x" media="(min-width:1000px)">
 
       <img src="" alt="logo" class="navbar_logo">
     </picture>
@@ -36,10 +36,10 @@
     <!-- NAVBAR DESKTOP-->
     <nav class="navbar_desktop">
       <ul class="navbar_listado">
-        <li><a href="descubrir.html" class="enlace_descubrir"><b>Descubrir</a></b> </li>
-        <li><a href="proximamente.html" class="enlace_prox"> <b> Proximamente</a></b>
+        <li><a href="descubrir.php" class="enlace_descubrir"><b>Descubrir</a></b> </li>
+        <li><a href="proximamente.php" class="enlace_prox"> <b> Proximamente</a></b>
         <li>
-        <li><a href="novedades.html" class="enlaces_novd"><b>Novedades</a></b></li>
+        <li><a href="novedades.php" class="enlaces_novd"><b>Novedades</a></b></li>
         <li><a href="mi_lista.html" class="enlace_milista"><b>Mi lista</a></b></li>
         <li><a href="login.php" class="enlace_login"><img src="./assets/img/svg/icon_user.svg" alt="" /></a></li>
         <?php
@@ -65,24 +65,24 @@
           o guárdate las que deseas comprar para <br> añadirlas a tu colección!</p>
       </section>
     </section>
-    <a href="novedades.html"> <button class="btn"> Novedades</button></a>
+    <a href="novedades.php"> <button class="btn"> Novedades</button></a>
   </div>
   <!-- CATEGORIAS -->
   <section class="categorias">
-    <a href="marvel.html"><img src="assets/img/smartphone/marvel.webp" alt="" /></a>
-    <a href="dc.html"><img src="assets/img/smartphone/dc.webp" alt="" /></a>
-    <a href="starwars.html"><img src="assets/img/smartphone/starwars.webp" alt="" /></a>
+    <a href="marvel.php"><img src="assets/img/smartphone/marvel.webp" alt="" /></a>
+    <a href="dc.php"><img src="assets/img/smartphone/dc.webp" alt="" /></a>
+    <a href="starwars.php"><img src="assets/img/smartphone/starwars.webp" alt="" /></a>
   </section>
   <main class="banner_secundarios">
     <section class="descubrir">
-      <a href="descubrir.html"><button class="btn">Descubrir</button></a>
+      <a href="descubrir.php"><button class="btn">Descubrir</button></a>
     </section>
 
 
 
     <!-- PROXIMAMENTE -->
     <section class="proximamente">
-      <a href="proximamente.html"><button class="btn">Proximamente</button></a>
+      <a href="proximamente.php"><button class="btn">Proximamente</button></a>
     </section>
   </main>
   <br><br>
