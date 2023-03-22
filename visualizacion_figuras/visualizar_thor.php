@@ -77,7 +77,7 @@
                   ../assets/img/smartphone/thor@2x.webp 2x"
                   media="(min-width:1000px)" >
           
-                  <img src="" alt="figura" width="300px" class="imagen_figura">
+                  <img src="" alt="figura" class="imagen_figura">
                 </picture>
               </div>
 
@@ -94,7 +94,7 @@
                   ../assets/img/smartphone/imagen_thorV2@2x.webp 2x"
                   media="(min-width:1000px)">
           
-                  <img src="" alt="figura"  width="350px" class="figura">
+                  <img src="" alt="figura" class="figura">
                 </picture>
               </div>
 

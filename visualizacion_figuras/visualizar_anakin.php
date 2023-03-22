@@ -74,7 +74,7 @@
                   <source srcset="
                   ../assets/img/smartphone/Anakin.webp 1x,
                   ../assets/img/smartphone/Anakin@2x.webp 2x"
-                  media="(min-width:1000px)" width="380px">
+                  media="(min-width:1000px)" >
           
                   <img src="" alt="logo" class="imagen_figura">
                 </picture>
@@ -92,7 +92,7 @@
                   ../assets/img/smartphone/AnakinV2@2x.png 2x"
                   media="(min-width:1000px)">
           
-                  <img src="" alt="logo"  width="320px" class="figura">
+                  <img src="" alt="logo"  class="figura">
                 </picture>
               </div>
 

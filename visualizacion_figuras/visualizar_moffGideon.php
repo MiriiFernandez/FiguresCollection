@@ -76,7 +76,7 @@
                 ../assets/img/smartphone/moffGideon@2x.webp 2x"
                 media="(min-width:1000px)">
         
-                <img src="" alt="figura" width="350px" class="imagen_figura">
+                <img src="" alt="figura" class="imagen_figura">
               </picture>
             </div>
 
@@ -93,7 +93,7 @@
                 ../assets/img/smartphone/MoffGideonV2@2x.webp 2x"
                 media="(min-width:1000px)">
         
-                <img src="" alt="figura"  width="400px" class="figura">
+                <img src="" alt="figura" class="figura">
               </picture>
             </div>
 
