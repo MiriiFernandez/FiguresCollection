@@ -817,7 +817,7 @@ footer {
     display: grid;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    background-image: url("/assets/img/desktop/logo_color.png");
+    background-image: url("../assets/img/desktop/logo_color.png");
     background-repeat: no-repeat;
     background-size: 130px;
     background-position: center;
