@@ -12,8 +12,8 @@
       <!-- LOGO -->
       <picture>
         <source srcset="
-        ../assets/img/desktop/logoDesk.webp 1x,
-        ../assets/img/desktop/logoDesk@2x.webp 2x"
+        assets/img/desktop/logoDesk.webp 1x,
+        assets/img/desktop/logoDesk@2x.webp 2x"
         media="(min-width:320px) and (orientation:portrait)">
 
         <source srcset="
