@@ -62,6 +62,11 @@
         flex: 1 0 100%;
       }
     }
+
+    @media screen and (min-width: 1000px) {
+      height: 100%;
+      flex: 1 0 100%;
+    }
   }
 
   .titulo_figura_visualizar {
