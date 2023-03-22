@@ -6,7 +6,7 @@
   margin-top: 10px;
   background: #fff;
   height: 520px;
-  @media screen and (min-width: 1366px) {
+  @media screen and (min-width: 1000px) {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -26,14 +26,14 @@
     .titulo_listado {
       font-family: "font_regular";
       font-size: 20px;
-      @media screen and (min-width: 1366px) {
+      @media screen and (min-width: 1000px) {
         font-size: 26px;
       }
     }
 
     .desc_listado{
         font-family: "font_ligero";
-        @media screen and (min-width: 1366px) {
+        @media screen and (min-width: 1000px) {
           font-size: 20px;
         }
     }

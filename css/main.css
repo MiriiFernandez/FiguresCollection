@@ -1322,7 +1322,15 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1000px;
+  max-width: 320px;
+}
+@media screen and (min-width: 1000px) {
+  .container .card_visualizar .carousel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1000px;
+  }
 }
 .container .card_visualizar .contenido {
   display: -webkit-box;
@@ -1546,7 +1554,7 @@ a {
   background: #fff;
   height: 520px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .listado {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1583,7 +1591,7 @@ a {
   font-family: "font_regular";
   font-size: 20px;
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .listado .colecciones .titulo_listado {
     font-size: 26px;
   }
@@ -1591,7 +1599,7 @@ a {
 .listado .colecciones .desc_listado {
   font-family: "font_ligero";
 }
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1000px) {
   .listado .colecciones .desc_listado {
     font-size: 20px;
   }
