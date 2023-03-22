@@ -44,7 +44,7 @@
   </section>
 
   <!-- JS -->
-  <script src="./js/prueba.js"></script>
+  <script src="./js/fetch.js"></script>
 
 </body>
 
