@@ -1,3 +1,10 @@
+#Testear base de datos
+~~~
+El repositorio incluye el archivo .sql 
+simplemente habra que exportarla
+~~~
+
+
 # Plantilla FrontEnd con SASS
 ##### Plantilla Básica para poder empezar casi cualquier proyecto en **FrontEnd**.
 
